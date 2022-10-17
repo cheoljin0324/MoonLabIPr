@@ -1023,7 +1023,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 693949624295113518}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3575956759821603127}
+        m_TargetAssemblyTypeName: TrainTextController, Assembly-CSharp
+        m_MethodName: SetMiddleText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: AMid
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2358502396530211872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,7 +1308,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5485760515126872755}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3575956759821603127}
+        m_TargetAssemblyTypeName: TrainTextController, Assembly-CSharp
+        m_MethodName: SetHeadText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: AHead
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3106568799121621970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1887,7 +1911,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6771022792478602567}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3575956759821603127}
+        m_TargetAssemblyTypeName: TrainTextController, Assembly-CSharp
+        m_MethodName: SetHeadText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CHead
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4042632601494949375
 GameObject:
   m_ObjectHideFlags: 0
@@ -2329,7 +2365,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3065887464133021881}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3575956759821603127}
+        m_TargetAssemblyTypeName: TrainTextController, Assembly-CSharp
+        m_MethodName: SetTailText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: BTail
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5098910715265560056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2450,7 +2498,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1168389273609238963}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3575956759821603127}
+        m_TargetAssemblyTypeName: TrainTextController, Assembly-CSharp
+        m_MethodName: SetTailText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CTail
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5398671497976462700
 GameObject:
   m_ObjectHideFlags: 0
@@ -2650,7 +2710,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5927841945328163325}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3575956759821603127}
+        m_TargetAssemblyTypeName: TrainTextController, Assembly-CSharp
+        m_MethodName: SetTailText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ATail
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5824357655478126858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2829,7 +2901,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5993022975527730793
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3113,7 +3185,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7879491203880385222}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3575956759821603127}
+        m_TargetAssemblyTypeName: TrainTextController, Assembly-CSharp
+        m_MethodName: SetHeadText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: BHead
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7039503071312673543
 GameObject:
   m_ObjectHideFlags: 0
@@ -3509,7 +3593,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7524557903251543479}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3575956759821603127}
+        m_TargetAssemblyTypeName: TrainTextController, Assembly-CSharp
+        m_MethodName: SetMiddleText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CMid
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8600262795878849558
 GameObject:
   m_ObjectHideFlags: 0
@@ -3630,4 +3726,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1248915247506154566}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3575956759821603127}
+        m_TargetAssemblyTypeName: TrainTextController, Assembly-CSharp
+        m_MethodName: SetMiddleText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: BMid
+          m_BoolArgument: 0
+        m_CallState: 2

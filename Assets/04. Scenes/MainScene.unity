@@ -389,11 +389,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MapCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1451918410478665897, guid: adfa02588b785a54a9cefda4c76f5cb4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1451918410478665908, guid: adfa02588b785a54a9cefda4c76f5cb4,
         type: 3}
       propertyPath: m_Camera
@@ -633,51 +628,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1780614293}
-    - target: {fileID: 4388027177616250789, guid: d8f80ec47faee9840aecf56dbaf35082,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 8620355071948906021, guid: d8f80ec47faee9840aecf56dbaf35082,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8620355071948906021, guid: d8f80ec47faee9840aecf56dbaf35082,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 8620355071948906021, guid: d8f80ec47faee9840aecf56dbaf35082,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2068194799}
-    - target: {fileID: 8620355071948906021, guid: d8f80ec47faee9840aecf56dbaf35082,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8620355071948906021, guid: d8f80ec47faee9840aecf56dbaf35082,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 8620355071948906021, guid: d8f80ec47faee9840aecf56dbaf35082,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 8620355071948906021, guid: d8f80ec47faee9840aecf56dbaf35082,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8620355071948906021, guid: d8f80ec47faee9840aecf56dbaf35082,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f80ec47faee9840aecf56dbaf35082, type: 3}
 --- !u!1001 &5993022974135991113
@@ -691,11 +646,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CreateCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 5993022975527730773, guid: 5f72f8d28818f6e428691ce28d564d53,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5993022975527730774, guid: 5f72f8d28818f6e428691ce28d564d53,
         type: 3}
