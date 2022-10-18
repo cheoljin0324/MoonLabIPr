@@ -6,7 +6,9 @@ using UnityEngine;
 public class BulletMove : MonoBehaviour
 {
     public float speed = 10.0f;
-    public float lifeTime = 3.0f;
+    public float lifeTime = 5.0f;
+
+    public Transform target;
 
     private void Start()
     {
@@ -15,6 +17,13 @@ public class BulletMove : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        if (target != null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        }
+        else
+        {
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        }
     }
 }
