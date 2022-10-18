@@ -23,7 +23,7 @@ public class BulletMove : MonoBehaviour
         }
         else
         {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            Destroy(gameObject);
         }
     }
 }

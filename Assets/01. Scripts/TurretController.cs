@@ -11,6 +11,8 @@ public class TurretController : MonoBehaviour
 
     private Transform target = null;
 
+    private bool isFinding = false;
+
     void Update()
     {
         if (target == null)
@@ -21,6 +23,11 @@ public class TurretController : MonoBehaviour
 
     private IEnumerator FindEnemy()
     {
+        if (isFinding)
+        {
+            yield break;
+        }
+        isFinding = true;
         while (true)
         {
             Collider[] collider = Physics.OverlapSphere(transform.position, crossroad, layerMask);
@@ -38,17 +45,20 @@ public class TurretController : MonoBehaviour
     {
         while (true)
         {
-            if (target != null)
+            if (target != null && Vector3.Distance(transform.position, target.position) < crossroad)
             {
+                transform.LookAt(target);
                 GameObject bulletObject = Instantiate(bullet, transform.position, Quaternion.identity);
                 bulletObject.GetComponent<BulletMove>().target = target;
+                yield return new WaitForSeconds(1.0f);
             }
             else
             {
                 target = null;
                 break;
             }
-            yield return new WaitForSeconds(1.0f);
+            yield return null;
         }
+        isFinding = false;
     }
 }
