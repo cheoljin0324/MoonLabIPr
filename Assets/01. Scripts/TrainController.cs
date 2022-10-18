@@ -6,7 +6,7 @@ public class TrainController : MonoBehaviour
 {
     private void Start()
     {
-        InvokeRepeating("CheckTrigger", 0f, 1f);
+        InvokeRepeating("CheckTrigger", 0f, 0.5f);
     }
     private void CheckTrigger()
     {

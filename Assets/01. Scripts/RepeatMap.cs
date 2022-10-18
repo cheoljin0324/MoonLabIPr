@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class RepeatMap : MonoBehaviour
 {
-    public float mapMoveSpeed = 5f;
+    public float mapMoveSpeed = 50f;
 
     private void Update()
     {
-        gameObject.transform.Translate(new Vector3(mapMoveSpeed, 0, 0));
+        gameObject.transform.Translate(new Vector3(mapMoveSpeed * Time.deltaTime, 0, 0));
     }
 }
