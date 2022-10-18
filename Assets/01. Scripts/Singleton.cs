@@ -23,9 +23,13 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         }
     }
 
-    virtual protected void Awake()
+    protected virtual void Awake()
     {
-        CheckInstance();
+        Debug.Log("Awake");
+        if (CheckInstance())
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
     }
 
     protected bool CheckInstance()
@@ -40,7 +44,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
             return true;
         }
 
-        Destroy(this);
+        Destroy(this.gameObject);
         return false;
     }
 }
