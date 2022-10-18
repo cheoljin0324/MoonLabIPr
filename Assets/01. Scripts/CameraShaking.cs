@@ -22,10 +22,11 @@ public class CameraShaking : MonoBehaviour
 
             while (elapsed < duration)
             {
-                float x = transform.position.x + Random.Range(-1f, 1f) * magnitude;
-                float z = transform.position.z + Random.Range(-1f, 1f) * magnitude;
+                //float x = transform.position.x + Random.Range(-1f, 1f) * magnitude;
+                float y = transform.position.y + Random.Range(-1f, 1f) * magnitude;
+                //float z = transform.position.z + Random.Range(-1f, 1f) * magnitude;
 
-                transform.localPosition = new Vector3(x, originalPos.y, z);
+                transform.localPosition = new Vector3(originalPos.x, y, originalPos.z);
 
                 elapsed += Time.deltaTime;
 
