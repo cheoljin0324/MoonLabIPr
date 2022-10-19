@@ -2,10 +2,21 @@ using System.Reflection.Emit;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ResultTime : MonoBehaviour
 {
+    public Slider slider;
+
+    public Text text;
+
     public float time = 20.0f;
+
+    private void Start()
+    {
+        slider.maxValue = time;
+        slider.value = time;
+    }
 
     private void Update()
     {
@@ -14,21 +25,12 @@ public class ResultTime : MonoBehaviour
         {
             time = 0;
         }
-    }
-
-    private void OnGUI()
-    {
-        GUIStyle style = new GUIStyle();
-        style.fontSize = 20;
-        style.normal.textColor = Color.black;
-        GUI.Label(new Rect(10, 10, 100, 20), time.ToString("F2") + " seconds left to the destination", style);
+        slider.value = time;
+        text.text = time.ToString("F2") + " seconds";
 
         if (time == 0)
         {
-            style.normal.textColor = Color.red;
-            GUI.Label(new Rect(50, 100, 100, 50), "You have arrived at the destination", style);
             Application.Quit();
         }
     }
-
 }
