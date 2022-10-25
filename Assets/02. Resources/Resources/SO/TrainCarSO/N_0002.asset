@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93486190dd9ed9a4fa4b3f0e49797ec2, type: 3}
-  m_Name: Train SO
+  m_Name: N_0002
   m_EditorClassIdentifier: 
-  stat:
-    _id: 
-    _name: 
-    _type: 0
-    _atk: 0
-    _atkSpeed: 0
-    _heavy: 0
-    _health: 0
+  Rank: 3
+  Type: 1
+  Stat:
+    _id: N_0002
+    _name: vz33
+    _atk: 20
+    _atkSpeed: 3
+    _heavy: 20
+    _health: 100
+  Model: {fileID: 0}
+  ModelSize: {x: 0, y: 0, z: 0}
