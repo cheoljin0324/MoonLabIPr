@@ -123,6 +123,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &19104345 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7178556011932919543, guid: 52744572794ee2745a14e7b8fe91e5ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 3285757097536847013}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &214091594
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc5ec5512f9034f4081bb0d5707a1883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 3285757097536847014}
+  nameText: {fileID: 1238598582}
   _userNameSO: {fileID: 11400000, guid: 35d0bade018a0ab4f9fdfb1e813f1949, type: 2}
 --- !u!1001 &1181960106
 PrefabInstance:
@@ -463,6 +475,84 @@ Transform:
   - {fileID: 333823824}
   m_Father: {fileID: 0}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1238598582 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6486233817543416372, guid: d8f80ec47faee9840aecf56dbaf35082,
+    type: 3}
+  m_PrefabInstance: {fileID: 1865628656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1326782213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1326782216}
+  - component: {fileID: 1326782215}
+  - component: {fileID: 1326782214}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1326782214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326782213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1326782215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326782213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1326782216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326782213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1626709916
 GameObject:
@@ -997,20 +1087,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7178556011932919543, guid: 52744572794ee2745a14e7b8fe91e5ed,
+        type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178556011932919543, guid: 52744572794ee2745a14e7b8fe91e5ed,
+        type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178556011932919543, guid: 52744572794ee2745a14e7b8fe91e5ed,
+        type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3285757097536847017}
+    - target: {fileID: 7178556011932919543, guid: 52744572794ee2745a14e7b8fe91e5ed,
+        type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178556011932919543, guid: 52744572794ee2745a14e7b8fe91e5ed,
+        type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CreateName
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178556011932919543, guid: 52744572794ee2745a14e7b8fe91e5ed,
+        type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UserName, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178556011932919543, guid: 52744572794ee2745a14e7b8fe91e5ed,
+        type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52744572794ee2745a14e7b8fe91e5ed, type: 3}
---- !u!114 &3285757097536847014 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3103624457269895926, guid: 52744572794ee2745a14e7b8fe91e5ed,
-    type: 3}
-  m_PrefabInstance: {fileID: 3285757097536847013}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3285757097536847016 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6340536177078888697, guid: 52744572794ee2745a14e7b8fe91e5ed,
@@ -1029,5 +1142,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6706f88195e054843b5788b6b5c300af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameInput: {fileID: 0}
+  nameInput: {fileID: 19104345}
   _userNameSO: {fileID: 11400000, guid: 35d0bade018a0ab4f9fdfb1e813f1949, type: 2}

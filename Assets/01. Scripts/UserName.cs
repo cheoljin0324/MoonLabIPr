@@ -22,7 +22,7 @@ public class UserName : MonoBehaviour
             return;
         }
 
-        _userNameSO.name = nameInput.text;
+        _userNameSO.name = nameInput.text + " ¿ª";
 
         MainUIManager.Instance.UpdateText();
         gameObject.SetActive(false);
