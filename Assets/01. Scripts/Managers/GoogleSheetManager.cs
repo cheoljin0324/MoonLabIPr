@@ -5,25 +5,15 @@ using UnityEngine.Networking;
 
 public class GoogleSheetManager : MonoBehaviour
 {
-    private const string URL = "https://docs.google.com/spreadsheets/d/1-gP0cWn33NAy7nwtNeRAwouCVxcKAv4vYZENwB7LIOA/";
+    private const string URL = "https://docs.google.com/spreadsheets/d/1-gP0cWn33NAy7nwtNeRAwouCVxcKAv4vYZENwB7LIOA/export?format=tsv";
+    UnityWebRequest www = null;
+    string data = string.Empty;
 
-    private void Start()
+    private IEnumerator Start()
     {
-        StartCoroutine(GetData());
-    }
-
-    private IEnumerator GetData()
-    {
-        UnityWebRequest request = UnityWebRequest.Get(URL);
-        yield return request.SendWebRequest();
-
-        if (request.isNetworkError || request.isHttpError)
-        {
-            Debug.Log(request.error);
-        }
-        else
-        {
-            Debug.Log(request.downloadHandler.text);
-        }
+        www = UnityWebRequest.Get(URL);
+        yield return www.SendWebRequest();
+        data = www.downloadHandler.text;
+        Debug.Log(data);
     }
 }
