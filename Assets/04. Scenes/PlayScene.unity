@@ -551,9 +551,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a492c95f2877ba346941281c091226ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMoveSpeed: 10
+  cameraMoveSpeed: 50
   _camera: {fileID: 1609077579}
-  mouseDownPos: {x: 0, y: 0}
 --- !u!114 &768480802
 MonoBehaviour:
   m_ObjectHideFlags: 0

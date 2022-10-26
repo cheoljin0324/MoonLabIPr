@@ -15,11 +15,11 @@ public class CameraController : MonoBehaviour, IDragHandler
     public void OnDrag(PointerEventData eventData)
     {
         mousePos = Input.mousePosition;
-        if(mousePos.x > mouseDownPos.x)
+        if(mousePos.x < mouseDownPos.x)
         {
             _camera.transform.Translate(cameraMoveSpeed * Time.deltaTime, 0, 0);
         }
-        else if (mousePos.x < mouseDownPos.x)
+        else if (mousePos.x > mouseDownPos.x)
         {
             _camera.transform.Translate(-cameraMoveSpeed * Time.deltaTime, 0, 0);
         }
