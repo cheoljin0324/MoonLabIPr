@@ -4,16 +4,8 @@ using UnityEngine;
 using System;
 
 [Serializable]
-public class TrainStat
+public class TrainCarStat
 {
-    [SerializeField]
-    private string _id = string.Empty;
-    public string ID => _id;
-
-    [SerializeField]
-    private string _name = string.Empty;
-    public string Name => _name;
-
     [SerializeField]
     private int _atk = 0;
     public int Atk => _atk;
