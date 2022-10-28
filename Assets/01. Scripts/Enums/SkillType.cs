@@ -1,4 +1,4 @@
-enum SkillType
+public enum SkillType
 {
     None,
     Active,

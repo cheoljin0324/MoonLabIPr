@@ -1,4 +1,4 @@
-enum SkillAimType
+public enum SkillAimType
 {
     None,
     First,
