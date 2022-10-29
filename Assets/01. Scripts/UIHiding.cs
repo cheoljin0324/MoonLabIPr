@@ -14,9 +14,9 @@ public class UIHiding : MonoBehaviour
 
     public Transform rightPos;
     public Transform leftPos;
+    public List<Transform> uiHideButtonPos = new List<Transform>();
     private List<Vector3> rightOriginPos = new List<Vector3>();
     private List<Vector3> leftOriginPos = new List<Vector3>();
-    public List<Transform> uiHideButtonPos = new List<Transform>();
 
     private void Start()
     {

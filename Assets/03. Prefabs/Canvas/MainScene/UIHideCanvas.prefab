@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 2610167904265527513}
   - component: {fileID: 2610167904265527514}
   - component: {fileID: 2610167904265527515}
+  - component: {fileID: 799232104}
   m_Layer: 5
   m_Name: UIHideCanvas
   m_TagString: Untagged
@@ -136,6 +137,34 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &799232104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2610167904265527508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df12124712de71f4a88e18bb6e5671cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  leftButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  uiHideButton: {fileID: 0}
+  rightPos: {fileID: 2610167905084678166}
+  leftPos: {fileID: 2610167903692850455}
+  uiHideButtonPos:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2610167905084678167
 GameObject:
   m_ObjectHideFlags: 0

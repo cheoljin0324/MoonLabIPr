@@ -178,12 +178,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &297874852 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2610167903692850455, guid: 0a853961a9b65be4f9f97c63446d229b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2610167903940260019}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &308515022
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,40 +322,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1865628656}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &799232103 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2610167904265527508, guid: 0a853961a9b65be4f9f97c63446d229b,
+--- !u!114 &799232104 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 799232104, guid: 0a853961a9b65be4f9f97c63446d229b,
     type: 3}
   m_PrefabInstance: {fileID: 2610167903940260019}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &799232104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799232103}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df12124712de71f4a88e18bb6e5671cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightButtons:
-  - {fileID: 1865628660}
-  - {fileID: 1865628659}
-  - {fileID: 1865628658}
-  - {fileID: 1865628657}
-  leftButtons:
-  - {fileID: 1865628664}
-  - {fileID: 1865628663}
-  - {fileID: 1865628662}
-  - {fileID: 1865628661}
-  uiHideButton: {fileID: 500139496}
-  rightPos: {fileID: 2093912229}
-  leftPos: {fileID: 297874852}
-  uiHideButtonPos:
-  - {fileID: 1865628666}
-  - {fileID: 1865628665}
 --- !u!1001 &1181960106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1041,12 +1013,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1865628656}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &2093912229 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2610167905084678166, guid: 0a853961a9b65be4f9f97c63446d229b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2610167903940260019}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2610167903940260019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1054,11 +1020,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2610167903692850455, guid: 0a853961a9b65be4f9f97c63446d229b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -499.99997
-      objectReference: {fileID: 0}
+    - target: {fileID: 799232104, guid: 0a853961a9b65be4f9f97c63446d229b, type: 3}
+      propertyPath: uiHideButton
+      value: 
+      objectReference: {fileID: 500139496}
+    - target: {fileID: 799232104, guid: 0a853961a9b65be4f9f97c63446d229b, type: 3}
+      propertyPath: leftButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1865628664}
+    - target: {fileID: 799232104, guid: 0a853961a9b65be4f9f97c63446d229b, type: 3}
+      propertyPath: leftButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1865628663}
+    - target: {fileID: 799232104, guid: 0a853961a9b65be4f9f97c63446d229b, type: 3}
+      propertyPath: leftButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1865628662}
+    - target: {fileID: 799232104, guid: 0a853961a9b65be4f9f97c63446d229b, type: 3}
+      propertyPath: leftButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1865628661}
+    - target: {fileID: 799232104, guid: 0a853961a9b65be4f9f97c63446d229b, type: 3}
+      propertyPath: rightButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1865628660}
+    - target: {fileID: 799232104, guid: 0a853961a9b65be4f9f97c63446d229b, type: 3}
+      propertyPath: rightButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1865628659}
+    - target: {fileID: 799232104, guid: 0a853961a9b65be4f9f97c63446d229b, type: 3}
+      propertyPath: rightButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1865628658}
+    - target: {fileID: 799232104, guid: 0a853961a9b65be4f9f97c63446d229b, type: 3}
+      propertyPath: rightButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1865628657}
+    - target: {fileID: 799232104, guid: 0a853961a9b65be4f9f97c63446d229b, type: 3}
+      propertyPath: uiHideButtonPos.Array.data[0]
+      value: 
+      objectReference: {fileID: 1865628666}
+    - target: {fileID: 799232104, guid: 0a853961a9b65be4f9f97c63446d229b, type: 3}
+      propertyPath: uiHideButtonPos.Array.data[1]
+      value: 
+      objectReference: {fileID: 1865628665}
     - target: {fileID: 2610167904265527508, guid: 0a853961a9b65be4f9f97c63446d229b,
         type: 3}
       propertyPath: m_Name
@@ -1174,11 +1179,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1626709918}
-    - target: {fileID: 2610167905084678166, guid: 0a853961a9b65be4f9f97c63446d229b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 499.99997
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a853961a9b65be4f9f97c63446d229b, type: 3}
 --- !u!1001 &3285757097536847013
