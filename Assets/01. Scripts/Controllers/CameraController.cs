@@ -14,6 +14,7 @@ public class CameraController : MonoBehaviour, IDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
+        
         mousePos = Input.mousePosition;
         if(mousePos.x < mouseDownPos.x)
         {
