@@ -17,13 +17,15 @@ public class TrainCarInfo
     public float skillCool = 0;
     public int skillDamage = 0;
 
-    public string rank;
+    public string rank = string.Empty;
 
-    public string type;
+    public string type = string.Empty;
 
-    public string skillType;
+    public string skillType = string.Empty;
 
-    public string skillAimType;
+    public string skillAimType = string.Empty;
 
-    public bool playerUse = true;
+    public bool playerUse = false;
+
+    public bool dataSetting = false;
 }

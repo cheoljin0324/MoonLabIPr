@@ -4,16 +4,6 @@ using UnityEngine;
 
 public class TrainCar : MonoBehaviour
 {
+    private TrainCarInfo trainCarInfo = null;
 
-
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
