@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using Newtonsoft.Json;
+
 
 public class GoogleSheetManager : Singleton<GoogleSheetManager>
 {
@@ -38,6 +40,7 @@ public class GoogleSheetManager : Singleton<GoogleSheetManager>
 
     private void Start()
     {
+
         WWWForm form = new WWWForm();
         form.AddField(POST_DATA_KEY, GET_TRAIN_CAR_DATA_VALUE);
         form.AddField(POST_ID_KEY, "N_0000");
@@ -50,10 +53,14 @@ public class GoogleSheetManager : Singleton<GoogleSheetManager>
             Debug.Log("Waiting...");
         }
 
-        data = JsonUtility.FromJson(www.downloadHandler.text, typeof(string)).ToString();
-        string[] datas = data.Split(',');
+        data = www.downloadHandler.text;
+        Debug.Log(data);
 
-        Debug.Log(datas[2]);
+    }
+
+    private TrainCarInfo ParseData(string data)
+    {
+        return JsonConvert.DeserializeObject<TrainCarInfo>(data);
     }
 
     private IEnumerator Post(WWWForm form)
@@ -69,25 +76,6 @@ public class GoogleSheetManager : Singleton<GoogleSheetManager>
         {
             Debug.Log("Form upload complete!");
         }
-    }
-
-    private TrainCarInfo ParseData(string data)
-    {
-        string[] datas = data.Split(',');
-        string id = datas[0];
-        string name = datas[1];
-        int hp = int.Parse(datas[2]);
-        int atk = int.Parse(datas[3]);
-        int def = int.Parse(datas[4]);
-        int spd = int.Parse(datas[5]);
-        int rank = int.Parse(datas[6]);
-        int type = int.Parse(datas[7]);
-        int skillType = int.Parse(datas[8]);
-        int skillAimType = int.Parse(datas[9]);
-        bool playerUse = bool.Parse(datas[10]);
-
-
-        return new TrainCarInfo();
     }
 }
 
