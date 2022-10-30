@@ -25,6 +25,6 @@ public class UserName : MonoBehaviour
         _userNameSO.name = nameInput.text + " ¿ª";
 
         MainUIManager.Instance.UpdateText();
-        gameObject.SetActive(false);
+        transform.GetComponent<Canvas>().enabled = false;
     }
 }
