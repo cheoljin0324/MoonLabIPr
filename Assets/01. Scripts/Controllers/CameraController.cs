@@ -11,12 +11,10 @@ public class CameraController : MonoBehaviour, IDragHandler
     private Vector2 mouseDownPos;
     private Vector2 mousePos;
 
-
     public void OnDrag(PointerEventData eventData)
     {
-        
         mousePos = Input.mousePosition;
-        if(mousePos.x < mouseDownPos.x)
+        if (mousePos.x < mouseDownPos.x)
         {
             _camera.transform.Translate(cameraMoveSpeed * Time.deltaTime, 0, 0);
         }
@@ -24,11 +22,6 @@ public class CameraController : MonoBehaviour, IDragHandler
         {
             _camera.transform.Translate(-cameraMoveSpeed * Time.deltaTime, 0, 0);
         }
-        mouseDownPos = Input.mousePosition;
-    }
-
-    public void OnMouseDown()
-    {
         mouseDownPos = Input.mousePosition;
     }
 }

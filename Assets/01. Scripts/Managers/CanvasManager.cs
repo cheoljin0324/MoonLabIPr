@@ -9,18 +9,42 @@ public class CanvasManager : MonoBehaviour
 
     private Canvas[] _canvases = null;
 
+    private float[] _changePointX = null;
+
     void Start()
     {
         _canvases = GetComponentsInChildren<Canvas>();
-        foreach (var canvas in _canvases)
+        _changePointX = new float[_canvases.Length - 1];
+        for (int i = 0; i < _changePointX.Length; i++)
         {
-            Debug.Log(canvas.name);
+            _changePointX[i] = HALF_POSITION_X * (i + 1);
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        for (int i = 0; i < _changePointX.Length; i++)
+        {
+            if (Camera.main.transform.position.x < _changePointX[i])
+            {
+                ChangeCanvas(i);
+                break;
+            }
+        }
+    }
 
+    public void ChangeCanvas(int index)
+    {
+        for (int i = 0; i < _canvases.Length; i++)
+        {
+            if (i == index)
+            {
+                _canvases[i].enabled = true;
+            }
+            else
+            {
+                _canvases[i].enabled = false;
+            }
+        }
     }
 }
