@@ -548,6 +548,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1181960106}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1135732324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8833381700170558306, guid: 25b2bbddd050cca448e9db2c88badb46,
+    type: 3}
+  m_PrefabInstance: {fileID: 260979198}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1135732326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135732324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d49ed06e384a498edc3c5a085141d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1181960106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1126,6 +1144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1215855293}
+  - component: {fileID: 1215855294}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -1148,6 +1167,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1215855294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215855292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca7136466794f0c4286b1f940da51eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1238598582 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6486233817543416372, guid: d8f80ec47faee9840aecf56dbaf35082,
