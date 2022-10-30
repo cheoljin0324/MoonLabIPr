@@ -48,7 +48,6 @@ public class MapMover : MonoBehaviour
             {
                 minAngle = angle;
                 minIndex = i;
-                Debug.Log("minAngle : " + minAngle + " angles : " + angles[i]);
             }
         }
 
@@ -61,7 +60,6 @@ public class MapMover : MonoBehaviour
 
 
         float angleToRotate = angles[minIndex];
-        Debug.Log(angleToRotate);
 
         transform.DORotate(new Vector3(0, angleToRotate, 0), 0.5f);
     }
