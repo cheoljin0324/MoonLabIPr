@@ -20,7 +20,7 @@ public class UIHiding : MonoBehaviour
 
     private void Start()
     {
-        for(int i = 0; i < rightButtons.Count; i++)
+        for (int i = 0; i < rightButtons.Count; i++)
         {
             rightOriginPos.Add(rightButtons[i].transform.position);
         }

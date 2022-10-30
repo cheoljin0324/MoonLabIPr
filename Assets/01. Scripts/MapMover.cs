@@ -23,7 +23,8 @@ public class MapMover : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             touchEnd = Input.mousePosition;
-            transform.Rotate(0, (touchStart.x - touchEnd.x) * Time.deltaTime, 0);
+            transform.Rotate(0, (touchStart.x - touchEnd.x) * Time.deltaTime * 15, 0);
+            touchStart = touchEnd;
         }
         if (Input.GetMouseButtonUp(0))
         {
