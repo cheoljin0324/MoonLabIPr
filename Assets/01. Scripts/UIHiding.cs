@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class UIHiding : MonoBehaviour
 {
-    private bool isHiding = false;
+    public bool isHiding = false;
 
     public List<GameObject> rightButtons = new List<GameObject>();
     public List<GameObject> leftButtons = new List<GameObject>();
