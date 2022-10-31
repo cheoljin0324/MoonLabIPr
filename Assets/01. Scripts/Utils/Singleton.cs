@@ -23,12 +23,12 @@ public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         }
     }
 
-    //TODO: 구분 할 수 있는 변수 만들기
+    [SerializeField]
+    protected bool doNotDestroy = true;
 
     protected virtual void Awake()
     {
-        //TODO: 변수를 이용해 필요할 때만 DontDestroyOnLoad하게 만들기
-        if (CheckInstance())
+        if (CheckInstance() && doNotDestroy)
         {
             DontDestroyOnLoad(this.gameObject);
         }
