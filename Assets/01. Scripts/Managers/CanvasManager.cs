@@ -7,9 +7,9 @@ public class CanvasManager : MonoBehaviour
 {
     const float HALF_POSITION_X = 115.42f;
 
-    private Canvas[] _canvases = null;
+    public Canvas[] _canvases = null;
 
-    private float[] _changePointX = null;
+    public float[] _changePointX = null;
 
     void Start()
     {
@@ -23,6 +23,7 @@ public class CanvasManager : MonoBehaviour
 
     private void Update()
     {
+        // 여기 부분만 고치면 될듯
         for (int i = 0; i < _changePointX.Length; i++)
         {
             if (Camera.main.transform.position.x < _changePointX[i])
