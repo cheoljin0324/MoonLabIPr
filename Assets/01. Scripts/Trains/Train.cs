@@ -3,6 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Skill
+{
+    ATK,
+    DEBUFF,
+    CC
+}
+
 public class Train : MonoBehaviour
 {
     private List<Transform> _trainCarsTransformList = null;
@@ -10,6 +17,8 @@ public class Train : MonoBehaviour
 
     private uint _trainCarCount;
     public uint TrainCarCount => _trainCarCount;
+
+    public Skill _skill;
 
     private void Awake()
     {
