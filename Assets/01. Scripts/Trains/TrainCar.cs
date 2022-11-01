@@ -6,4 +6,8 @@ public class TrainCar : MonoBehaviour
 {
     private TrainCarInfo trainCarInfo = null;
 
+    private void OnMouseDown()
+    {
+        SkillManager.Instance.UseSkill();
+    }
 }

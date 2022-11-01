@@ -25,5 +25,10 @@ public class Train : MonoBehaviour
         {
             Debug.LogError($"TrainCarTransformSetting: TrainCarCount is not equal to TrainCarTransforms.Length\n_trainCarCount: {_trainCarCount}\n_trainCarsTransformList.Count: {_trainCarsTransformList.Count}");
         }
+
+        foreach (var trainCarTransform in _trainCarsTransformList)
+        {
+            trainCarTransform.gameObject.AddComponent<TrainCar>();
+        }
     }
 }
