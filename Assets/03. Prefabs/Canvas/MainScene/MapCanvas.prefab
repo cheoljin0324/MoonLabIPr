@@ -774,7 +774,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2539452319464409529}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1451918410478665908}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1214834158146701649
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,6 +976,7 @@ GameObject:
   - component: {fileID: 1451918410478665908}
   - component: {fileID: 1451918410478665911}
   - component: {fileID: 1451918410478665910}
+  - component: {fileID: 1095033163}
   m_Layer: 5
   m_Name: MapCanvas
   m_TagString: Untagged
@@ -996,7 +1021,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1046,6 +1071,27 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1095033163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451918410478665897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df12124712de71f4a88e18bb6e5671cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHiding: 0
+  rightButtons: []
+  leftButtons: []
+  uiHideButton: {fileID: 958713268924851003}
+  rightPos: {fileID: 0}
+  leftPos: {fileID: 0}
+  uiHideButtonPos:
+  - {fileID: 6704199708304306904}
+  - {fileID: 6331227638094751343}
 --- !u!1 &1556475733370734212
 GameObject:
   m_ObjectHideFlags: 0
@@ -2837,7 +2883,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5760165034685666979}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1095033163}
+        m_TargetAssemblyTypeName: UIHiding, Assembly-CSharp
+        m_MethodName: OnHideUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6475318042025509447
 GameObject:
   m_ObjectHideFlags: 0
