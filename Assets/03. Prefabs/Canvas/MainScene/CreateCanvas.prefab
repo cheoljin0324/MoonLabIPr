@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 2653543663779297409}
   - component: {fileID: 3575243118379571059}
   - component: {fileID: 5115539414854527504}
+  - component: {fileID: 1196699703}
   m_Layer: 5
   m_Name: Image (5)
   m_TagString: Untagged
@@ -186,6 +187,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1196699703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869974751430480341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14543418e8870e0458efe65fc2dfac64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trainCarImage: {fileID: 635012373}
 --- !u!1 &2088891640721129230
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: -70}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0.000061035156}
   m_SizeDelta: {x: 484, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5437990445541587437
@@ -281,6 +295,7 @@ GameObject:
   - component: {fileID: 2813244829889742639}
   - component: {fileID: 3971748684703120519}
   - component: {fileID: 4762588901948054284}
+  - component: {fileID: 98281225}
   m_Layer: 5
   m_Name: Image (3)
   m_TagString: Untagged
@@ -345,6 +360,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &98281225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2218826140111047955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14543418e8870e0458efe65fc2dfac64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trainCarImage: {fileID: 635012373}
 --- !u!1 &2312154889088757489
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,9 +751,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5993022975527730773}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 5993022975527730774}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -734,6 +762,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &4097346288651318181
 GameObject:
@@ -822,6 +862,7 @@ GameObject:
   - component: {fileID: 6649253593626134741}
   - component: {fileID: 6089024041217900372}
   - component: {fileID: 6202017136254894670}
+  - component: {fileID: 1380400729}
   m_Layer: 5
   m_Name: Image (4)
   m_TagString: Untagged
@@ -886,6 +927,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1380400729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4282155753734076566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14543418e8870e0458efe65fc2dfac64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trainCarImage: {fileID: 635012373}
 --- !u!1 &4932034666419512872
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,6 +1026,7 @@ GameObject:
   - component: {fileID: 7904398892037099045}
   - component: {fileID: 1103283738606280662}
   - component: {fileID: 279202996442539549}
+  - component: {fileID: 471591780}
   m_Layer: 5
   m_Name: Image (6)
   m_TagString: Untagged
@@ -1036,6 +1091,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &471591780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129126160607035784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14543418e8870e0458efe65fc2dfac64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trainCarImage: {fileID: 635012373}
 --- !u!1 &5569731694598131127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1115,8 @@ GameObject:
   - component: {fileID: 1298755364515070844}
   - component: {fileID: 7502395662484588954}
   - component: {fileID: 2931690786199131510}
+  - component: {fileID: 635012374}
+  - component: {fileID: 635012373}
   m_Layer: 5
   m_Name: Panel (2)
   m_TagString: Untagged
@@ -1114,6 +1184,45 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!61 &635012374
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5569731694598131127}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 600, y: 350}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1200, y: 700}
+  m_EdgeRadius: 0
+--- !u!114 &635012373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5569731694598131127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 277f6daefcd8438439427b477dc28b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isIn: 0
 --- !u!1 &5724630885379721838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1234,7 @@ GameObject:
   - component: {fileID: 5634625865910425701}
   - component: {fileID: 6605496677917182874}
   - component: {fileID: 8293801490596510773}
+  - component: {fileID: 1050717098}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1189,6 +1299,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1050717098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5724630885379721838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14543418e8870e0458efe65fc2dfac64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trainCarImage: {fileID: 635012373}
 --- !u!1 &5993022975527730773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,7 +1341,7 @@ RectTransform:
   m_GameObject: {fileID: 5993022975527730773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.0012020244, y: 0.0012020244, z: 0.0012020244}
   m_Children:
   - {fileID: 9000588213615569542}
   - {fileID: 245408319136804856}
@@ -1240,11 +1363,11 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5993022975527730773}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1276,7 +1399,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &5993022975527730772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1306,10 +1429,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc691d593b95554a91f43d587ec67b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _leftButton: {fileID: 0}
-  _rightButton: {fileID: 0}
-  _content: {fileID: 0}
-  _text: {fileID: 0}
+  _leftButton: {fileID: 2237762186884356567}
+  _rightButton: {fileID: 5233559660004037770}
+  _content: {fileID: 2088891640721129230}
+  _text: {fileID: 8536059311131168677}
 --- !u!1 &6188967507421823439
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,8 +1632,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2291408345630576022}
   m_HandleRect: {fileID: 1759558021355762555}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.8108108
+  m_Value: 0.4999998
+  m_Size: 0.81081074
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1736,6 +1859,7 @@ GameObject:
   - component: {fileID: 7346871388551346879}
   - component: {fileID: 3695060123142668468}
   - component: {fileID: 17887261411102308}
+  - component: {fileID: 1527471713}
   m_Layer: 5
   m_Name: Image (2)
   m_TagString: Untagged
@@ -1800,6 +1924,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1527471713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6519669488664779111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14543418e8870e0458efe65fc2dfac64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trainCarImage: {fileID: 635012373}
 --- !u!1 &6613255448022611413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2166,6 +2303,7 @@ GameObject:
   - component: {fileID: 4689432413769352300}
   - component: {fileID: 1520653024066667376}
   - component: {fileID: 4523300750203851265}
+  - component: {fileID: 663398062}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -2230,6 +2368,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &663398062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7221154997503176498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14543418e8870e0458efe65fc2dfac64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trainCarImage: {fileID: 635012373}
 --- !u!1 &8245690305809735010
 GameObject:
   m_ObjectHideFlags: 0
