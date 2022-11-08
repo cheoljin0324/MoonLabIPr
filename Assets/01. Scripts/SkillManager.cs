@@ -50,14 +50,14 @@ public class SkillManager : Singleton<SkillManager>
                             foreach (var enemyCollider in enemyColliders)
                             {
                                 enemyCollider.GetComponent<MeshRenderer>().material.color = Color.black;
-                                enemyCollider.GetComponent<Enemy>().atkSpeed = 2f;
+                                //enemyCollider.GetComponent<Enemy>().atkSpeed = 2f;
                             }
                             _skillCanvas.enabled = false;
                             yield return new WaitForSeconds(3f);
                             foreach (var enemyCollider in enemyColliders)
                             {
                                 enemyCollider.GetComponent<MeshRenderer>().material.color = Color.red;
-                                enemyCollider.GetComponent<Enemy>().atkSpeed = 1.0f;
+                                //enemyCollider.GetComponent<Enemy>().atkSpeed = 1.0f;
                             }
                             break;
                         case Skill.CC:

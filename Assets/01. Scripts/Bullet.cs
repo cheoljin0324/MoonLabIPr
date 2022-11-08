@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public GameObject _parent;
-    public float _speed = 10.0f;
+    private float _speed = 15.0f;
 
     private void Update()
     {
-        transform.Translate(Vector3.back * Time.deltaTime * _speed);
+        transform.Translate(Vector3.forward * Time.deltaTime * _speed);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject != _parent)
+        if (other.GetComponent<Enemy>() != null)
         {
-            Destroy(gameObject);
+            other.GetComponent<Enemy>().Damaged(10.0f);
+            Destroy(this.gameObject);
         }
     }
 }
