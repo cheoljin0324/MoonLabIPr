@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class MainUIManager : Singleton<MainUIManager>
 {
-    private Canvas openCanvas;
+    private Canvas openCanvas = null;
 
     private Vector3 startScale = Vector3.zero;
     private Vector3 originScale;
@@ -16,6 +16,7 @@ public class MainUIManager : Singleton<MainUIManager>
 
     public Text nameText;
     public UserNameSO _userNameSO;
+
 
     public void UpdateText()
     {
@@ -27,10 +28,18 @@ public class MainUIManager : Singleton<MainUIManager>
         openCanvas = ui.GetComponent<Canvas>();
         if (openCanvas != null)
         {
-            originScale = ui.transform.localScale;
-            ui.transform.localScale = startScale;
+            openCanvas.renderMode = RenderMode.WorldSpace;
+            originScale = openCanvas.transform.localScale;
+            openCanvas.transform.localScale = startScale;
             openCanvas.enabled = true;
-            ui.transform.DOScale(originScale, 0.2f);
+            DOTween.Sequence()
+                .Append(openCanvas.transform.DOScale(originScale, 0.2f))
+                .AppendInterval(0.2f)
+                .OnComplete(() =>
+                {
+                    openCanvas.renderMode = RenderMode.ScreenSpaceCamera;
+                });
+            
         }
     }
 
@@ -39,9 +48,17 @@ public class MainUIManager : Singleton<MainUIManager>
         openCanvas = ui.GetComponent<Canvas>();
         if (openCanvas != null)
         {
-            ui.transform.position += startPos;
+            openCanvas.renderMode = RenderMode.WorldSpace;
+            openCanvas.transform.position += startPos;
             openCanvas.enabled = true;
-            ui.transform.DOMoveY(originYPos, 0.3f);
+            DOTween.Sequence()
+                .Append(openCanvas.transform.DOMoveY(originYPos, 0.3f))
+                .AppendInterval(0.3f)
+                .OnComplete(() =>
+                {
+                    openCanvas.renderMode = RenderMode.ScreenSpaceCamera;
+                });
+
         }
     }
 }
