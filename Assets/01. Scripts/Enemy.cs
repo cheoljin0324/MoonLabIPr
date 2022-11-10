@@ -9,15 +9,28 @@ public class Enemy : MonoBehaviour
     public bool canMove = true;
     public int spawnPointIndex = 0;
 
-    void Start()
+    private Renderer renderer;
+
+    void Awake()
     {
+        renderer = GetComponent<Renderer>();
         StartCoroutine(Move());
+    }
+
+    private void Update()
+    {
+        if(RouteCanvasSliderController.Instance.isEnd && _hp > 0)
+        {
+            _hp = 0;
+            Damaged(0);
+            //StartCoroutine(FadeOut());
+        }
     }
 
     private IEnumerator Move()
     {
         Vector3 dir = new Vector3(1, 0, 0);
-        while (true)
+        while (RouteCanvasSliderController.Instance.isEnd == false)
         {
             if (!canMove)
             {
@@ -38,5 +51,18 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
             EnemySpawn.Instance.isSpawned[spawnPointIndex] = false;
         }
+    }
+
+    private IEnumerator FadeOut()
+    {
+        float fadeCount = 1f;
+        while(fadeCount > 0f)
+        {
+            fadeCount -= 0.03f;
+            yield return new WaitForSeconds(0.1f);
+            renderer.sharedMaterial.color = new Color(renderer.sharedMaterial.color.r, renderer.sharedMaterial.color.g, renderer.sharedMaterial.color.b, fadeCount);
+        }
+        Destroy(gameObject);
+        EnemySpawn.Instance.isSpawned[spawnPointIndex] = false;
     }
 }

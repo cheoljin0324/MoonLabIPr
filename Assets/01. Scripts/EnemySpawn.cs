@@ -21,7 +21,7 @@ public class EnemySpawn : Singleton<EnemySpawn>
 
     private IEnumerator SpawnEnemy()
     {
-        while (true)
+        while (RouteCanvasSliderController.Instance.isEnd == false)
         {
             yield return new WaitForSeconds(spawnTime);
             int spawnPointIndex = GetRandomSpawnPointIndex();

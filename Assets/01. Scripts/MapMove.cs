@@ -8,6 +8,7 @@ public class MapMove : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        if(RouteCanvasSliderController.Instance.isEnd == false)
+            transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
 }

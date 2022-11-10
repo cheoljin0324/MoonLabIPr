@@ -58,7 +58,6 @@ public class MainUIManager : Singleton<MainUIManager>
                 {
                     openCanvas.renderMode = RenderMode.ScreenSpaceCamera;
                 });
-
         }
     }
 }
