@@ -30,10 +30,9 @@ public abstract class ButtonManager : MonoSingleton<ButtonManager>
     {
         foreach (ButtonInfo buttonInfo in _buttonList)
         {
-            MethodInfo methodInfo = this.GetType().GetMethod("On" + buttonInfo.Name, BindingFlags.NonPublic|BindingFlags.Instance);
+            MethodInfo methodInfo = this.GetType().GetMethod("On" + buttonInfo.Name, BindingFlags.Public|BindingFlags.Instance);
             if (methodInfo != null)
             {
-                Debug.Log("Register Button Event : " + buttonInfo.Name);
                 buttonInfo.Button.onClick.AddListener(() => methodInfo?.Invoke(this, null));
             }
         }
