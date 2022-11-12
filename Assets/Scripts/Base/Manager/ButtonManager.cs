@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using System.Reflection;
+using UnityEngine;
 
 public abstract class ButtonManager : MonoSingleton<ButtonManager>
 {
@@ -29,9 +30,10 @@ public abstract class ButtonManager : MonoSingleton<ButtonManager>
     {
         foreach (ButtonInfo buttonInfo in _buttonList)
         {
-            MethodInfo methodInfo = GetType().GetMethod("On" + buttonInfo.Name, BindingFlags.Instance|BindingFlags.NonPublic);
+            MethodInfo methodInfo = this.GetType().GetMethod("On" + buttonInfo.Name, BindingFlags.NonPublic|BindingFlags.Instance);
             if (methodInfo != null)
             {
+                Debug.Log("Register Button Event : " + buttonInfo.Name);
                 buttonInfo.Button.onClick.AddListener(() => methodInfo?.Invoke(this, null));
             }
         }
