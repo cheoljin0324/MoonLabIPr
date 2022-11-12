@@ -5,47 +5,47 @@ using UnityEngine.SceneManagement;
 
 public class MenuCanvasButtonManager : ButtonManager
 {
-    public void OnSupplyButton()
+    public void OnSupplyButtonClick()
     {
         Debug.Log("OnSupplyButton");
     }
 
-    public void OnEnhanceButton()
+    public void OnUpgradeButtonClick()
     {
-        Debug.Log("OnEnhanceButton");
+        CanvasManager.Instance.ChangeCanvas("MenuCanvas", "TrainCarUpgradeCanvas");
     }
 
-    public void OnOrganizationButton()
+    public void OnOrganizationButtonClick()
     {
         Debug.Log("OrganizationButton");
     }
 
-    public void OnAchievementButton()
+    public void OnAchievementButtonClick()
     {
         Debug.Log("AchievementButton");
     }
 
-    public void OnTrainCarListButton()
+    public void OnTrainCarListButtonClick()
     {
         CanvasManager.Instance.ChangeCanvas("MenuCanvas", "TrainCarListCanvas");
     }
 
-    public void OnShopButton()
+    public void OnShopButtonClick()
     {
         Debug.Log("OnShopButton");
     }
 
-    public void OnMessageButton()
+    public void OnMessageButtonClick()
     {
         Debug.Log("OnMessageButton");
     }
 
-    public void OnSettingButton()
+    public void OnSettingButtonClick()
     {
         Debug.Log("OnSettingButton");
     }
 
-    public void OnCalendarButton()
+    public void OnCalendarButtonClick()
     {
         Debug.Log("OnCalendarButton");
     }

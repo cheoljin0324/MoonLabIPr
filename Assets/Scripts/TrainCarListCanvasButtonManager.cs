@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class TrainCarListCanvasButtonManager : ButtonManager
 {
-    public void OnHomeButton()
+    public void OnHomeButtonClick()
     {
         CanvasManager.Instance.ChangeCanvas("TrainCarListCanvas", "MenuCanvas");
     }
     
-    public void OnBookmarkButton()
+    public void OnBookmarkButtonClick()
     {
         Debug.Log("OnBookmarkButton");
     }
     
-    public void OnCommentsButton()
+    public void OnCommentsButtonClick()
     {
         Debug.Log("OnCommentsButton");
     }
     
-    public void OnLockButton()
+    public void OnLockButtonClick()
     {
         Debug.Log("OnLockButton");
     }
