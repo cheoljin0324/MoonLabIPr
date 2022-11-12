@@ -1,22 +1,19 @@
 using UnityEngine;
 
-public class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
+public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
 {
     private static T instance = null;
-    private static object locker = new object();
     public static T Instance
     {
         get
         {
-            lock (locker)
+            if (instance == null)
             {
+                instance = FindObjectOfType(typeof(T)) as T;
+
                 if (instance == null)
                 {
-                    instance = FindObjectOfType(typeof(T)) as T;
-                    if (instance == null)
-                    {
-                        instance = new GameObject(typeof(T).ToString(), typeof(T)).GetComponent<T>();
-                    }
+                    Debug.LogError(typeof(T) + "is nothing");
                 }
             }
 
@@ -24,13 +21,30 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
         }
     }
 
-    public static bool IsNull()
+    [SerializeField]
+    private bool doNotDestroy = true;
+
+    protected virtual void Awake()
     {
-        return instance == null;
+        if (CheckInstance() && doNotDestroy)
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
     }
 
-    private void Awake()
+    private bool CheckInstance()
     {
-        instance = this as T;
+        if (instance == null)
+        {
+            instance = this as T;
+            return true;
+        }
+        else if (Instance == this)
+        {
+            return true;
+        }
+
+        Destroy(this.gameObject);
+        return false;
     }
 }

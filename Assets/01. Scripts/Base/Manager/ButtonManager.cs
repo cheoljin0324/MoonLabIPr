@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
 using System.Reflection;
 
-public abstract class ButtonManager : MonoBehaviour
+public abstract class ButtonManager : MonoSingleton<ButtonManager>
 {
     private List<ButtonInfo> _buttonList = new List<ButtonInfo>();
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         InitButtonList();
         SetButtonEvent();
     }

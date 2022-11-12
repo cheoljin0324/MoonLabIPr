@@ -4,47 +4,47 @@ using UnityEngine;
 
 public class MenuCanvasButtonManager : ButtonManager
 {
-    private void OnSupplyButton()
+    public void OnSupplyButton()
     {
         Debug.Log("OnSupplyButton");
     }
 
-    private void OnEnhanceButton()
+    public void OnEnhanceButton()
     {
         Debug.Log("OnEnhanceButton");
     }
 
-    private void OnOrganizationButton()
+    public void OnOrganizationButton()
     {
         Debug.Log("OrganizationButton");
     }
 
-    private void OnAchievementButton()
+    public void OnAchievementButton()
     {
         Debug.Log("AchievementButton");
     }
 
-    private void OnTrainListButton()
+    public void OnTrainListButton()
     {
         Debug.Log("OnTrainListButton");
     }
 
-    private void OnShopButton()
+    public void OnShopButton()
     {
         Debug.Log("OnShopButton");
     }
 
-    private void OnMessageButton()
+    public void OnMessageButton()
     {
         Debug.Log("OnMessageButton");
     }
 
-    private void OnSettingButton()
+    public void OnSettingButton()
     {
         Debug.Log("OnSettingButton");
     }
 
-    private void OnCalendarButton()
+    public void OnCalendarButton()
     {
         Debug.Log("OnCalendarButton");
     }
