@@ -2,13 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class TextManager : MonoSingleton<TextManager>
+public abstract class TextManager : MonoBehaviour
 {
     private Dictionary<string, string> _textDictionary = new Dictionary<string, string>();
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
         InitTextDictionary();
     }
 

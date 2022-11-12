@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuCanvasButtonManager : ButtonManager
 {
@@ -24,9 +25,9 @@ public class MenuCanvasButtonManager : ButtonManager
         Debug.Log("AchievementButton");
     }
 
-    public void OnTrainListButton()
+    public void OnTrainCarListButton()
     {
-        Debug.Log("OnTrainListButton");
+        CanvasManager.Instance.ChangeCanvas("MenuCanvas", "TrainCarListCanvas");
     }
 
     public void OnShopButton()

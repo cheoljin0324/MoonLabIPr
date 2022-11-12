@@ -4,36 +4,35 @@ using UnityEngine.UI;
 using System.Reflection;
 using UnityEngine;
 
-public abstract class ButtonManager : MonoSingleton<ButtonManager>
+public abstract class ButtonManager : MonoBehaviour
 {
-    private List<ButtonInfo> _buttonList = new List<ButtonInfo>();
+    private Dictionary<string, Button> _buttonDictionary = new Dictionary<string, Button>();
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
         InitButtonList();
         SetButtonEvent();
     }
 
     private void InitButtonList()
     {
-        _buttonList.Clear();
+        _buttonDictionary.Clear();
 
         Button[] buttons = GetComponentsInChildren<Button>();
         foreach (Button button in buttons)
         {
-            _buttonList.Add(new ButtonInfo(button.name, button));
+            _buttonDictionary.Add(button.name, button);
         }
     }
 
     private void SetButtonEvent()
     {
-        foreach (ButtonInfo buttonInfo in _buttonList)
+        foreach (string buttonInfo in _buttonDictionary.Keys)
         {
-            MethodInfo methodInfo = this.GetType().GetMethod("On" + buttonInfo.Name, BindingFlags.Public|BindingFlags.Instance);
+            MethodInfo methodInfo = this.GetType().GetMethod("On" + buttonInfo, BindingFlags.Public|BindingFlags.Instance);
             if (methodInfo != null)
             {
-                buttonInfo.Button.onClick.AddListener(() => methodInfo?.Invoke(this, null));
+                _buttonDictionary[buttonInfo].onClick.AddListener(() => methodInfo?.Invoke(this, null));
             }
         }
     }
