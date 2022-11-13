@@ -8,4 +8,9 @@ public class TrainCarUpgradeCanvasButtonManager : ButtonManager
     {
         CanvasManager.Instance.ChangeCanvas("TrainCarUpgradeCanvas", "MenuCanvas");
     }
+    
+    public void OnTrainCarUpgradeButtonClick()
+    {
+        Debug.Log("OnTrainCarUpgradeButtonClick");
+    }
 }
