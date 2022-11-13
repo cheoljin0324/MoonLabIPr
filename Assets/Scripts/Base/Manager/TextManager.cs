@@ -22,15 +22,15 @@ public abstract class TextManager : MonoBehaviour
         }
     }
 
-    public virtual void SetText(string name, string text)
+    public virtual void SetText(string textUIName, string content)
     {
-        if (_textDictionary.ContainsKey(name))
+        if (_textDictionary.ContainsKey(textUIName))
         {
-            _textDictionary[name] = text;
+            _textDictionary[textUIName] = content;
         }
         else
         {
-            Debug.LogError("TextManager: " + name + " is not exist");
+            Debug.LogError("TextManager: " + textUIName + " is not exist");
         }
     }
 }

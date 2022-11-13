@@ -10,18 +10,25 @@ public abstract class ButtonManager : MonoBehaviour
 
     private void Awake()
     {
-        InitButtonList();
+        InitButtonDictionary();
         SetButtonEvent();
     }
 
-    private void InitButtonList()
+    private void InitButtonDictionary()
     {
         _buttonDictionary.Clear();
 
         Button[] buttons = GetComponentsInChildren<Button>();
         foreach (Button button in buttons)
         {
-            _buttonDictionary.Add(button.name, button);
+            if (_buttonDictionary.ContainsKey(button.name))
+            {
+                Debug.LogError($"Please check the button name. There is a duplicate name. {button.name}");
+            }
+            else
+            {
+                _buttonDictionary.Add(button.name, button);
+            }
         }
     }
 
@@ -33,6 +40,10 @@ public abstract class ButtonManager : MonoBehaviour
             if (methodInfo != null)
             {
                 _buttonDictionary[buttonInfo].onClick.AddListener(() => methodInfo?.Invoke(this, null));
+            }
+            else
+            {
+                Debug.LogWarning($"Can't found {buttonInfo}'s method");
             }
         }
     }
