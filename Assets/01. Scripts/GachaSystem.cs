@@ -15,20 +15,34 @@ public class GachaSystem : MonoBehaviour
 
     private GameObject[] rareCharacter;
 
-    public void Gacha()
+    public void Gacha(bool isTenGacha)
     {
         randomRarity = Random.Range(0f, 100f);
-        if(randomRarity <= (float)RARITY.SSR)
+        if(isTenGacha == true)
         {
-            SSRGacha();
+            if (randomRarity <= (float)RARITY.SSR)
+            {
+                SSRGacha();
+            }
+            else if (randomRarity <= (float)RARITY.SR)
+            {
+                SRGacha();
+            }
+            else if (randomRarity <= (float)RARITY.RARE)
+            {
+                RareGacha();
+            }
         }
-        else if(randomRarity <= (float)RARITY.SR)
+        else
         {
-            SRGacha();
-        }
-        else if(randomRarity <= (float)RARITY.RARE)
-        {
-            RareGacha();
+            if (randomRarity <= (float)RARITY.SSR)
+            {
+                SSRGacha();
+            }
+            else if (randomRarity <= (float)RARITY.RARE)
+            {
+                SRGacha();
+            }
         }
     }
 
