@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TrainCarUpgradeCanvasButtonManager : ButtonManager
 {
-    public void OnHomeButtonClick()
+    public void OnBackButtonClick()
     {
         CanvasManager.Instance.ChangeCanvas("TrainCarUpgradeCanvas", "MenuCanvas");
     }
