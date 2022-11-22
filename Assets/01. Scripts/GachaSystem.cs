@@ -4,62 +4,65 @@ using UnityEngine;
 
 public class GachaSystem : MonoBehaviour
 {
-    public enum RARITY
-    {
-        RARE = 100,
-        SR = 30,
-        SSR = 5,
-    }
-
     private float randomRarity = 0f;
 
-    private GameObject[] rareCharacter;
+    public List<CharacterSO> normalCharacterList = new List<CharacterSO>();
+    public List<CharacterSO> rareCharacterList = new List<CharacterSO>();
+    public List<CharacterSO> superRareCharacterList = new List<CharacterSO>();
 
-    public void Gacha(bool isTenGacha)
+    public CharacterSO Gacha(bool isTenGacha)
     {
         randomRarity = Random.Range(0f, 100f);
+        CharacterSO character = null;
+
         if(isTenGacha == true)
         {
-            if (randomRarity <= (float)RARITY.SSR)
+            if (randomRarity <= (float)Rank.SuperRare)
             {
-                SSRGacha();
+                character = SuperRareGacha();
             }
-            else if (randomRarity <= (float)RARITY.SR)
+            else if (randomRarity <= (float)Rank.Rare)
             {
-                SRGacha();
+                character = RareGacha();
             }
-            else if (randomRarity <= (float)RARITY.RARE)
+            else if (randomRarity <= (float)Rank.Normal)
             {
-                RareGacha();
+                character = NormalGacha();
             }
         }
         else
         {
-            if (randomRarity <= (float)RARITY.SSR)
+            if (randomRarity <= (float)Rank.SuperRare)
             {
-                SSRGacha();
+                character = SuperRareGacha();
             }
-            else if (randomRarity <= (float)RARITY.RARE)
+            else if (randomRarity <= (float)Rank.Rare)
             {
-                SRGacha();
+                character = RareGacha();
             }
         }
+
+        return character;
     }
 
-    public void RareGacha()
+    public CharacterSO NormalGacha()
     {
-        randomRarity = Random.Range(0, rareCharacter.Length);
+        randomRarity = Random.Range(0, normalCharacterList.Count);
 
-        //return rareCharacter[(int)randomRarity];
+        return normalCharacterList[(int)randomRarity];
     }
 
-    public void SRGacha()
+    public CharacterSO RareGacha()
     {
+        randomRarity = Random.Range(0, rareCharacterList.Count);
 
+        return rareCharacterList[(int)randomRarity];
     }
 
-    public void SSRGacha()
+    public CharacterSO SuperRareGacha()
     {
+        randomRarity = Random.Range(0, superRareCharacterList.Count);
 
+        return superRareCharacterList[(int)randomRarity];
     }
 }

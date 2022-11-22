@@ -1,9 +1,7 @@
 
 public enum Rank
 {
-    None,
-    Normal,
-    Rare,
-    SuperRare,
-    UltraRare
+    Normal = 100,
+    Rare = 30,
+    SuperRare = 10,
 }
