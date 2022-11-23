@@ -36,7 +36,7 @@ public abstract class ButtonManager : MonoBehaviour
     {
         foreach (string buttonInfo in _buttonDictionary.Keys)
         {
-            MethodInfo methodInfo = this.GetType().GetMethod("On" + buttonInfo + "Click", BindingFlags.Public|BindingFlags.Instance);
+            MethodInfo methodInfo = this.GetType().GetMethod("On" + buttonInfo + "Clicked", BindingFlags.Public|BindingFlags.Instance);
             if (methodInfo != null)
             {
                 _buttonDictionary[buttonInfo].onClick.AddListener(() => methodInfo?.Invoke(this, null));

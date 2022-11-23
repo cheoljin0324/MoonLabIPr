@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,14 @@ public class CanvasManager : MonoSingleton<CanvasManager>
         InitCanvasDictionary();
     }
 
+    private void Start()
+    {
+        foreach (var key in _canvasDictionary.Keys)
+        {
+            _canvasDictionary[key].enabled = key == "MenuCanvas";
+        }
+    }
+
     private void InitCanvasDictionary()
     {
         _canvasDictionary.Clear();
@@ -24,16 +33,16 @@ public class CanvasManager : MonoSingleton<CanvasManager>
         }
     }
 
-    public void ChangeCanvas(string currentCanvas, string newCanvas)
+    public void ChangeCanvas(string currentCanvas, string nextCanvas)
     {
-        if (_canvasDictionary.ContainsKey(currentCanvas) && _canvasDictionary.ContainsKey(newCanvas))
+        if (_canvasDictionary.ContainsKey(currentCanvas) && _canvasDictionary.ContainsKey(nextCanvas))
         {
             _canvasDictionary[currentCanvas].enabled = false;
-            _canvasDictionary[newCanvas].enabled = true;
+            _canvasDictionary[nextCanvas].enabled = true;
         }
         else
         {
-            Debug.LogError($"Can't find Canvas {currentCanvas} or {newCanvas}");
+            Debug.LogError($"Can't find Canvas {currentCanvas} or {nextCanvas}");
         }
     }
 }

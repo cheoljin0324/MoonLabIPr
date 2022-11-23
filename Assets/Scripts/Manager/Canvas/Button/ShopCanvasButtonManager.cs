@@ -6,5 +6,8 @@ using UnityEngine.UIElements;
 
 public class ShopCanvasButtonManager : ButtonManager
 {
-    
+    public void OnExitButtonClicked()
+    {
+        CanvasManager.Instance.ChangeCanvas("ShopCanvas", "MenuCanvas");
+    }
 }
