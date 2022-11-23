@@ -1,7 +1,7 @@
 
 public enum SkillAimType
 {
-    FirstType,
-    SecondType,
-    ThirdType,
+    First,
+    Second,
+    Third,
 }

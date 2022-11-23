@@ -25,7 +25,7 @@ public class CanvasManager : MonoSingleton<CanvasManager>
     {
         _canvasDictionary.Clear();
         
-        Canvas[] canvases = FindObjectsOfType<Canvas>();
+        Canvas[] canvases = GetComponentsInChildren<Canvas>();
 
         foreach (Canvas canvas in canvases)
         {
@@ -43,6 +43,21 @@ public class CanvasManager : MonoSingleton<CanvasManager>
         else
         {
             Debug.LogError($"Can't find Canvas {currentCanvas} or {nextCanvas}");
+        }
+    }
+    
+    public void ChangeCanvas(string nextCanvas)
+    {
+        if (_canvasDictionary.ContainsKey(nextCanvas))
+        {
+            foreach (var key in _canvasDictionary.Keys)
+            {
+                _canvasDictionary[key].enabled = key == nextCanvas;
+            }
+        }
+        else
+        {
+            Debug.LogError($"Can't find Canvas {nextCanvas}");
         }
     }
 }
