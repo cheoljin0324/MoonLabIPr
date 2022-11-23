@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f32aa0f5649b847919f80917eb8b10, type: 3}
   m_Name: RareTest
   m_EditorClassIdentifier: 
-  characterRank: 0
+  characterRank: 30
   hp: 0
   maxHp: 0
   attack: 0
