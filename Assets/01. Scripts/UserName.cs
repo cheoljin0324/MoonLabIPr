@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 public class UserName : MonoBehaviour
 {
     public InputField nameInput;
-    public UserNameSO _userNameSO;
+    public UserDataSO _userNameSO;
 
     private bool CheckName()
     {

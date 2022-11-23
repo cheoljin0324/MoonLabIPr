@@ -15,7 +15,7 @@ public class MainUIManager : Singleton<MainUIManager>
     private float originYPos = 1f;
 
     public Text nameText;
-    public UserNameSO _userNameSO;
+    public UserDataSO _userNameSO;
 
 
     public void UpdateText()
