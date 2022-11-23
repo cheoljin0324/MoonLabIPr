@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrainCar : MonoBehaviour
 {
     public string ID;
-    public string name;
+    public string Name;
     public int atk;
     public int atkSpd;
     public int heavy;

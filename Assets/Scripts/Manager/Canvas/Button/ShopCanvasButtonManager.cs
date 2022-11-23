@@ -6,8 +6,28 @@ using UnityEngine.UIElements;
 
 public class ShopCanvasButtonManager : ButtonManager
 {
-    public void OnExitButtonClicked()
+    public void OnCloseButtonClicked()
     {
         CanvasManager.Instance.ChangeCanvas("ShopCanvas", "MenuCanvas");
+    }
+    
+    public void OnGachaButton10Clicked()
+    {
+        Debug.Log("10");
+    }
+    
+    public void OnGachaButton1Clicked()
+    {
+        Debug.Log("1");
+    }
+    
+    public void OnAppearCharacterButtonClicked()
+    {
+        Debug.Log("Appear");
+    }
+    
+    public void OnRouletteLogButtonClicked()
+    {
+        Debug.Log("RouletteLog");
     }
 }
