@@ -6,16 +6,17 @@ public class GachaSystem : MonoBehaviour
 {
     private float randomRarity = 0f;
 
-    public List<CharacterSO> normalCharacterList = new List<CharacterSO>();
-    public List<CharacterSO> rareCharacterList = new List<CharacterSO>();
-    public List<CharacterSO> superRareCharacterList = new List<CharacterSO>();
+    [SerializeField]
+    public bool isTenGachaCanvas = false;
 
-    public CharacterSO Gacha(bool isTenGacha)
+    public CharacterListSO characterList;
+
+    public CharacterSO Gacha(int isTenGacha)
     {
         randomRarity = Random.Range(0f, 100f);
         CharacterSO character = null;
 
-        if(isTenGacha == true)
+        if(isTenGacha != 9)
         {
             if (randomRarity <= (float)Rank.SuperRare)
             {
@@ -47,22 +48,22 @@ public class GachaSystem : MonoBehaviour
 
     public CharacterSO NormalGacha()
     {
-        randomRarity = Random.Range(0, normalCharacterList.Count);
+        randomRarity = Random.Range(0, characterList.normalCharacterList.Count);
 
-        return normalCharacterList[(int)randomRarity];
+        return characterList.normalCharacterList[(int)randomRarity];
     }
 
     public CharacterSO RareGacha()
     {
-        randomRarity = Random.Range(0, rareCharacterList.Count);
+        randomRarity = Random.Range(0, characterList.rareCharacterList.Count);
 
-        return rareCharacterList[(int)randomRarity];
+        return characterList.rareCharacterList[(int)randomRarity];
     }
 
     public CharacterSO SuperRareGacha()
     {
-        randomRarity = Random.Range(0, superRareCharacterList.Count);
+        randomRarity = Random.Range(0, characterList.superRareCharacterList.Count);
 
-        return superRareCharacterList[(int)randomRarity];
+        return characterList.superRareCharacterList[(int)randomRarity];
     }
 }
