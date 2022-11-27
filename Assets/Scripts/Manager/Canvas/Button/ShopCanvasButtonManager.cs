@@ -13,12 +13,12 @@ public class ShopCanvasButtonManager : ButtonManager
     
     public void OnGachaButton10Clicked()
     {
-        CanvasManager.Instance.ChangeCanvas("ShopCanvas", "Gacha10Canvas");
+        //CanvasManager.Instance.ChangeCanvas("ShopCanvas", "Gacha10Canvas");
     }
     
     public void OnGachaButton1Clicked()
     {
-        CanvasManager.Instance.ChangeCanvas("ShopCanvas", "GachaCanvas");
+        //CanvasManager.Instance.ChangeCanvas("ShopCanvas", "GachaCanvas");
     }
 
     public void OnAppearCharacterButtonClicked()
