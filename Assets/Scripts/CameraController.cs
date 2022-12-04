@@ -5,27 +5,18 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private Vector3 startPosition;
-    private Vector3 endPosition;
+      private void Update()
+      { 
+          if (Input.GetKey(KeyCode.LeftArrow))
+          {
+              transform.Translate(Vector3.left * 10f * Time.deltaTime);
+          }
 
-    private bool isClicking = false;
-    private bool wasClicking = false;
-    
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (isClicking)
-            {
-                
-            }
-        }
+          if (Input.GetKey(KeyCode.RightArrow))
+          {
+              transform.Translate(Vector3.right * 10f * Time.deltaTime);
+          }
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            isClicking = false;
-        }
-        
-        
-    }
+          transform.position = new Vector3(transform.position.x, transform.position.y,Mathf.Clamp(transform.position.z, -40f, 0f));
+      }
 }
