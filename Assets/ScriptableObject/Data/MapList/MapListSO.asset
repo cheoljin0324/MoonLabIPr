@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapList:
   - countryName: "\uAC9C\uB9C8\uACE0"
-    stationName: "\uC0B0\uC545\uD611\uB825"
+    stationName: "\uC0B0\uD559\uD611\uB825"
     questDiscription: "\uC11C\uC724\uC544 \uC77C\uD558\uC790"
     missionReward: "\uAC1C\uBC1C \uB2A5\uB825 \uD5A5\uC0C1"
+  - countryName: "\uB300\uD55C\uBBFC\uAD6D"
+    stationName: "\uC6D4\uB4DC\uCEF5"
+    questDiscription: "\uBE0C\uB77C\uC9C8: \uD1A0\uB07C\uB97C \uC7A1\uC744 \uB54C\uB3C4
+      \uCD5C\uC120\uC744 \uB2E4\uD55C\uB2E4"
+    missionReward: "\uD55C\uAD6D: \uC5B4\uC9F8\uC11C..?"

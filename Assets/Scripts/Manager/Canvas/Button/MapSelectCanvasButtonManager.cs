@@ -24,4 +24,12 @@ public class MapSelectCanvasButtonManager : ButtonManager
         questDiscription.text = mapListSO.mapList[0].questDiscription;
         missionReward.text = mapListSO.mapList[0].missionReward;
     }
+
+    public void OnMap2ButtonClicked()
+    {
+        country.text = mapListSO.mapList[1].countryName;
+        station.text = mapListSO.mapList[1].stationName;
+        questDiscription.text = mapListSO.mapList[1].questDiscription;
+        missionReward.text = mapListSO.mapList[1].missionReward;
+    }
 }
