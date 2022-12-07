@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CanvasManager : MonoSingleton<CanvasManager>
 {
-    Dictionary<string, Canvas> _canvasDictionary = new Dictionary<string, Canvas>();
+    private Dictionary<string, Canvas> _canvasDictionary = new Dictionary<string, Canvas>();
 
     protected override void Awake()
     {

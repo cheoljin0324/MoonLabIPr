@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MapSelectCanvasButtonManager : ButtonManager
@@ -31,5 +33,11 @@ public class MapSelectCanvasButtonManager : ButtonManager
         station.text = mapListSO.mapList[1].stationName;
         questDiscription.text = mapListSO.mapList[1].questDiscription;
         missionReward.text = mapListSO.mapList[1].missionReward;
+    }
+    
+    public void OnGameStartButtonClicked()
+    {
+        SceneManager.LoadScene("CombatScene");
+        CanvasManager.Instance.ChangeCanvas("MapSelectCanvas", "CombatCanvas");
     }
 }
