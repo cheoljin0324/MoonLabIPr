@@ -63,12 +63,12 @@ public class CameraController : MonoBehaviour
         if (_isMove)
         {
             transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, transform.position.z + (_clickPosition.x - Input.mousePosition.x)), _sensitivity * Time.deltaTime);
-            _moveVector = transform.position - _target.position;
         }
         else if(!_isClicking)
         {
             transform.position = _target.position + _moveVector;
         }
+        _moveVector = transform.position - _target.position;
 
         transform.position = new Vector3(transform.position.x, transform.position.y,Mathf.Clamp(transform.position.z, _target.transform.position.z - 50f, _target.transform.position.z));
     }
