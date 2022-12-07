@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class TrainMove : MonoBehaviour
 {
-    private TrainStat _trainStat = null;
+    [SerializeField] 
+    private float MaxSpeed = 1f;
 
     private bool _isMoving = false;
 
     private void Awake()
     {
-        _trainStat = GetComponent<TrainStat>();
         _isMoving = false;
     }
 
@@ -43,7 +43,7 @@ public class TrainMove : MonoBehaviour
     {
         _isMoving = true;
 
-        float trainSpeed = Mathf.Clamp(speed, -_trainStat.MaxSpeed, _trainStat.MaxSpeed);
+        float trainSpeed = Mathf.Clamp(speed, 0f, MaxSpeed);
         
         while (_isMoving)
         {
