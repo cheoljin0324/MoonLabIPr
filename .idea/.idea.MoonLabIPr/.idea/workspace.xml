@@ -2,10 +2,946 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5c2637b-4bcd-49f6-a330-777dfa700184" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Train.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Train.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Alternates.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Alternates/Polygon_War_Material_03_C.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Alternates/Polygon_War_Material_03_C.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Misc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Misc/Polygon_War_German_Tank_Destroyed_01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Misc/Polygon_War_German_Tank_Destroyed_01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Misc/Polygon_War_Glass_Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Misc/Polygon_War_Glass_Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Misc/Polygon_War_Russian_Tank_Destroyed_01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Misc/Polygon_War_Russian_Tank_Destroyed_01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Misc/Polygon_War_TankTrack_Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Misc/Polygon_War_TankTrack_Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Polygon_War_Material_01_A.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Polygon_War_Material_01_A.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Vehicles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Vehicles/Polygon_War_German_Vehicles_01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Materials/Vehicles/Polygon_War_German_Vehicles_01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Collision.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Collision/SM_Bld_Tent_01_Collision.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Collision/SM_Bld_Tent_01_Collision.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Collision/SM_Bld_Tent_02_Collision.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Collision/SM_Bld_Tent_02_Collision.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Pile_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Pile_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Wall_03_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Wall_03_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Wall_Curved_01_Convex 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Wall_Curved_01_Convex 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Wall_End_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Wall_End_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Env_Trench_Planks_02_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Env_Trench_Planks_02_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_AlarmPole_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_AlarmPole_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_02_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_02_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_Pile_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_Pile_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_Pile_02_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_Pile_02_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_BedMatress_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_BedMatress_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Bedframe_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Bedframe_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_CampBed_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_CampBed_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_CampBed_02_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_CampBed_02_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Chair_02_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Chair_02_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Crate_04_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Crate_04_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Crate_Pile_01_Convex 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Crate_Pile_01_Convex 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Crate_Pile_02_Convex 3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Crate_Pile_02_Convex 3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_GasCan_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_GasCan_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex 2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex 2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex 3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex 3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_PowerPole_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_PowerPole_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Radio_Tower_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Radio_Tower_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Shell_02_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Shell_02_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Shell_03_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Shell_03_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Table_02_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Table_02_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_WashingLine_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_WashingLine_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_WashingLine_03_Convex 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_WashingLine_03_Convex 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Wire_03_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Wire_03_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Wire_04_Convex 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Prop_Wire_04_Convex 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_American_Truck_Destroyed_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_American_Truck_Destroyed_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_BarrageBalloon_01_Convex 2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_BarrageBalloon_01_Convex 2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_BarrageBalloon_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_BarrageBalloon_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_Car_Damaged_02_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_Car_Damaged_02_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Car_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Car_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Halftrack_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Halftrack_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_02_Convex 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_02_Convex 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_02_Convex 2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_02_Convex 2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_02_Convex 3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_02_Convex 3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_03_Convex 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_03_Convex 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_03_Convex 2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_03_Convex 2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_Destroyed_01_Convex 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_Destroyed_01_Convex 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_Russian_Tank_Destroyed_01_Convex.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/Convex/SM_Veh_Russian_Tank_Destroyed_01_Convex.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Bld_Tent_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Bld_Tent_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Bld_Tent_02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Bld_Tent_02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Bld_Tent_Medical_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Bld_Tent_Medical_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Brick_Debris_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Brick_Debris_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Brick_Debris_03.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Brick_Debris_03.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Grass_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Grass_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Sandbag_Pile_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Sandbag_Pile_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Sandbag_Wall_03.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Sandbag_Wall_03.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Sandbag_Wall_Curved_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Sandbag_Wall_Curved_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Sandbag_Wall_End_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Sandbag_Wall_End_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Trench_Planks_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Trench_Planks_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Trench_Planks_02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Env_Trench_Planks_02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_AlarmPole_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_AlarmPole_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Barrel_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Barrel_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Barrel_02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Barrel_02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Barrel_Pile_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Barrel_Pile_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Barrel_Pile_02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Barrel_Pile_02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_BedMatress_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_BedMatress_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Bedframe_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Bedframe_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_CampBed_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_CampBed_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_CampBed_02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_CampBed_02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Chair_02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Chair_02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Crate_04.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Crate_04.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Crate_Pile_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Crate_Pile_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Crate_Pile_02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Crate_Pile_02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_GasCan_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_GasCan_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_German_Flak_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_German_Flak_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_PowerPole_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_PowerPole_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Radio_Tower_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Radio_Tower_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Shell_02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Shell_02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Shell_03.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Shell_03.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Table_02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Table_02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_WashingLine_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_WashingLine_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_WashingLine_03.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_WashingLine_03.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Wire_03.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Wire_03.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Wire_04.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Prop_Wire_04.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_American_Truck_Destroyed_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_American_Truck_Destroyed_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_BarrageBalloon_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_BarrageBalloon_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_Car_Damaged_02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_Car_Damaged_02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_German_Car_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_German_Car_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_German_Halftrack_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_German_Halftrack_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_German_Tank_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_German_Tank_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_German_Tank_02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_German_Tank_02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_German_Tank_03.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_German_Tank_03.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_German_Tank_Destroyed_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_German_Tank_Destroyed_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_Russian_Tank_Destroyed_01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Models/SM_Veh_Russian_Tank_Destroyed_01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Buildings.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Buildings/SM_Bld_Tent_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Buildings/SM_Bld_Tent_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Buildings/SM_Bld_Tent_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Buildings/SM_Bld_Tent_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Buildings/SM_Bld_Tent_Medical_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Buildings/SM_Bld_Tent_Medical_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Brick_Debris_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Brick_Debris_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Brick_Debris_03.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Brick_Debris_03.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Grass_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Grass_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Pile_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Pile_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Wall_03.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Wall_03.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Wall_Curved_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Wall_Curved_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Wall_End_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Wall_End_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Trench_Planks_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Trench_Planks_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Trench_Planks_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Environments/SM_Env_Trench_Planks_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_AlarmPole_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_AlarmPole_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_Pile_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_Pile_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_Pile_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_Pile_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_BedMatress_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_BedMatress_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Bedframe_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Bedframe_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_CampBed_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_CampBed_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_CampBed_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_CampBed_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Chair_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Chair_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Crate_04.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Crate_04.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Crate_Pile_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Crate_Pile_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Crate_Pile_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Crate_Pile_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_GasCan_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_GasCan_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_German_Flak_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_German_Flak_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_PowerPole_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_PowerPole_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Radio_Tower_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Radio_Tower_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Shell_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Shell_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Shell_03.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Shell_03.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Table_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Table_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_WashingLine_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_WashingLine_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_WashingLine_03.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_WashingLine_03.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Wire_03.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Wire_03.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Wire_04.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Props/SM_Prop_Wire_04.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_American_Truck_Destroyed_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_American_Truck_Destroyed_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_BarrageBalloon_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_BarrageBalloon_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_Car_Damaged_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_Car_Damaged_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Car_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Car_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Halftrack_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Halftrack_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_03.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_03.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_Destroyed_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_Destroyed_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_Russian_Tank_Destroyed_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_Russian_Tank_Destroyed_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures/German_Vehicle_Texture_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures/German_Vehicle_Texture_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures/German_Vehicle_Texture_01_Destroyed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures/German_Vehicle_Texture_01_Destroyed.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures/PolygonWar_Texture_01_A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures/PolygonWar_Texture_01_A.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures/PolygonWar_Texture_03_C.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures/PolygonWar_Texture_03_C.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures/Russian_Vehicle_Texture_01_Destroyed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures/Russian_Vehicle_Texture_01_Destroyed.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures/Tank_Track_Texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/PolygonWar/Textures/Tank_Track_Texture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Tex.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Tex/NewLayer.terrainlayer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Tex/NewLayer.terrainlayer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Tex/seamless_beach_sand_texture_by_hhh316_d4hr45u-fullview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Tex/seamless_beach_sand_texture_by_hhh316_d4hr45u-fullview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Vladislav Tsurikov.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Vladislav Tsurikov/Mega World.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Vladislav Tsurikov/Mega World/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Vladislav Tsurikov/Mega World/Resources/Polaris Brushes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Vladislav Tsurikov/Mega World/Resources/Polaris Brushes/WhiteSquare.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Vladislav Tsurikov/Mega World/Resources/Polaris Brushes/WhiteSquare.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/10 BROWN-DARK-LPUP.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/10 BROWN-DARK-LPUP.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/47 BLUE-WHITE-LPUP.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/47 BLUE-WHITE-LPUP.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/atlas-LPUP.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/atlas-LPUP.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-albedo-LPUP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-albedo-LPUP.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-emission-LPUP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-emission-LPUP.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-specular-LPUP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-specular-LPUP.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/M.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Nature_M.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Nature_M/Trees_M.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Nature_M/Trees_M/stump-snow.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Nature_M/Trees_M/stump-snow.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Nature_M.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Nature_M/Trees_M.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Nature_M/Trees_M/stump-snow.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Nature_M/Trees_M/stump-snow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/NewLayer.terrainlayer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/NewLayer.terrainlayer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/logs-snow.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/logs-snow.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/shrub_white.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/shrub_white.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-baobab_white.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-baobab_white.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-beech_white.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-beech_white.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-birch_white.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-birch_white.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-conifer_snow.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-conifer_snow.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-dead-snow.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-dead-snow.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-elipse_white.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-elipse_white.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-fir-snow.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-fir-snow.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-forest_white.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-forest_white.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-lime_white.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-lime_white.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-oak_white.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-oak_white.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-round_white.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-round_white.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-simple_white.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-simple_white.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-tall_white.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-tall_white.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree_white.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree_white.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/barricade-tank.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/barricade-tank.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/sandbag.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/sandbag.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/sandbags-straight.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/sandbags-straight.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/tent-war.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/tent-war.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/trenches-wire.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/trenches-wire.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/trenches-wood.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/trenches-wood.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/logs-snow.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/logs-snow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/shrub_white.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/shrub_white.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-baobab_white.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-baobab_white.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-beech_white.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-beech_white.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-birch_white.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-birch_white.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-conifer-snow.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-conifer-snow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-dead-snow.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-dead-snow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-elipse_white.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-elipse_white.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-fir-snow.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-fir-snow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-forest_white.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-forest_white.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-lime_white.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-lime_white.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-oak_white.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-oak_white.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-round_white.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-round_white.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-simple_white.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-simple_white.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-tall_white.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-tall_white.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree_white.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree_white.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/barricade-tank.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/barricade-tank.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/sandbag.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/sandbag.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/sandbags-straight.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/sandbags-straight.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/tent-war.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/tent-war.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/trenches-wire.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/trenches-wire.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/trenches-wood.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/trenches-wood.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MoonLabIPr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MoonLabIPr/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1.Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1.Scenes/NewLayer.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1.Scenes/NewLayer.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/com.unity.mobile.notifications.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/com.unity.mobile.notifications/NotificationSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/com.unity.mobile.notifications/NotificationSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapTrain.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapTrain.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain 3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Alternates.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Alternates/Polygon_War_Material_03_C.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Alternates/Polygon_War_Material_03_C.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Misc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Misc/Polygon_War_German_Tank_Destroyed_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Misc/Polygon_War_German_Tank_Destroyed_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Misc/Polygon_War_Glass_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Misc/Polygon_War_Glass_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Misc/Polygon_War_Russian_Tank_Destroyed_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Misc/Polygon_War_Russian_Tank_Destroyed_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Misc/Polygon_War_TankTrack_Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Misc/Polygon_War_TankTrack_Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Polygon_War_Material_01_A.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Polygon_War_Material_01_A.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Vehicles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Vehicles/Polygon_War_German_Vehicles_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Materials/Vehicles/Polygon_War_German_Vehicles_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Collision.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Collision/SM_Bld_Tent_01_Collision.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Collision/SM_Bld_Tent_01_Collision.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Collision/SM_Bld_Tent_02_Collision.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Collision/SM_Bld_Tent_02_Collision.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Pile_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Pile_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Wall_03_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Wall_03_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Wall_Curved_01_Convex 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Wall_Curved_01_Convex 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Wall_End_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Env_Sandbag_Wall_End_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Env_Trench_Planks_02_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Env_Trench_Planks_02_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_AlarmPole_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_AlarmPole_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_02_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_02_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_Pile_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_Pile_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_Pile_02_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Barrel_Pile_02_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_BedMatress_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_BedMatress_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Bedframe_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Bedframe_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_CampBed_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_CampBed_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_CampBed_02_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_CampBed_02_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Chair_02_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Chair_02_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Crate_04_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Crate_04_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Crate_Pile_01_Convex 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Crate_Pile_01_Convex 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Crate_Pile_02_Convex 3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Crate_Pile_02_Convex 3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_GasCan_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_GasCan_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex 2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex 2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex 3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex 3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_German_Flak_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_PowerPole_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_PowerPole_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Radio_Tower_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Radio_Tower_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Shell_02_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Shell_02_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Shell_03_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Shell_03_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Table_02_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Table_02_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_WashingLine_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_WashingLine_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_WashingLine_03_Convex 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_WashingLine_03_Convex 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Wire_03_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Wire_03_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Wire_04_Convex 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Prop_Wire_04_Convex 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_American_Truck_Destroyed_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_American_Truck_Destroyed_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_BarrageBalloon_01_Convex 2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_BarrageBalloon_01_Convex 2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_BarrageBalloon_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_BarrageBalloon_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_Car_Damaged_02_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_Car_Damaged_02_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Car_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Car_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Halftrack_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Halftrack_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_02_Convex 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_02_Convex 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_02_Convex 2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_02_Convex 2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_02_Convex 3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_02_Convex 3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_03_Convex 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_03_Convex 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_03_Convex 2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_03_Convex 2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_Destroyed_01_Convex 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_German_Tank_Destroyed_01_Convex 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_Russian_Tank_Destroyed_01_Convex.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/Convex/SM_Veh_Russian_Tank_Destroyed_01_Convex.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Bld_Tent_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Bld_Tent_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Bld_Tent_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Bld_Tent_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Bld_Tent_Medical_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Bld_Tent_Medical_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Brick_Debris_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Brick_Debris_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Brick_Debris_03.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Brick_Debris_03.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Grass_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Grass_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Sandbag_Pile_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Sandbag_Pile_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Sandbag_Wall_03.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Sandbag_Wall_03.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Sandbag_Wall_Curved_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Sandbag_Wall_Curved_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Sandbag_Wall_End_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Sandbag_Wall_End_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Trench_Planks_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Trench_Planks_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Trench_Planks_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Env_Trench_Planks_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_AlarmPole_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_AlarmPole_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Barrel_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Barrel_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Barrel_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Barrel_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Barrel_Pile_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Barrel_Pile_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Barrel_Pile_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Barrel_Pile_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_BedMatress_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_BedMatress_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Bedframe_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Bedframe_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_CampBed_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_CampBed_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_CampBed_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_CampBed_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Chair_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Chair_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Crate_04.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Crate_04.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Crate_Pile_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Crate_Pile_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Crate_Pile_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Crate_Pile_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_GasCan_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_GasCan_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_German_Flak_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_German_Flak_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_PowerPole_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_PowerPole_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Radio_Tower_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Radio_Tower_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Shell_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Shell_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Shell_03.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Shell_03.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Table_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Table_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_WashingLine_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_WashingLine_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_WashingLine_03.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_WashingLine_03.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Wire_03.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Wire_03.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Wire_04.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Prop_Wire_04.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_American_Truck_Destroyed_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_American_Truck_Destroyed_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_BarrageBalloon_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_BarrageBalloon_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_Car_Damaged_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_Car_Damaged_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_German_Car_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_German_Car_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_German_Halftrack_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_German_Halftrack_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_German_Tank_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_German_Tank_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_German_Tank_02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_German_Tank_02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_German_Tank_03.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_German_Tank_03.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_German_Tank_Destroyed_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_German_Tank_Destroyed_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_Russian_Tank_Destroyed_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Models/SM_Veh_Russian_Tank_Destroyed_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Buildings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Buildings/SM_Bld_Tent_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Buildings/SM_Bld_Tent_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Buildings/SM_Bld_Tent_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Buildings/SM_Bld_Tent_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Buildings/SM_Bld_Tent_Medical_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Buildings/SM_Bld_Tent_Medical_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Brick_Debris_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Brick_Debris_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Brick_Debris_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Brick_Debris_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Grass_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Grass_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Pile_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Pile_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Wall_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Wall_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Wall_Curved_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Wall_Curved_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Wall_End_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Sandbag_Wall_End_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Trench_Planks_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Trench_Planks_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Trench_Planks_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Environments/SM_Env_Trench_Planks_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_AlarmPole_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_AlarmPole_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_Pile_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_Pile_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_Pile_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Barrel_Pile_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_BedMatress_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_BedMatress_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Bedframe_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Bedframe_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_CampBed_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_CampBed_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_CampBed_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_CampBed_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Chair_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Chair_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Crate_04.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Crate_04.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Crate_Pile_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Crate_Pile_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Crate_Pile_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Crate_Pile_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_GasCan_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_GasCan_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_German_Flak_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_German_Flak_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_PowerPole_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_PowerPole_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Radio_Tower_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Radio_Tower_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Shell_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Shell_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Shell_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Shell_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Table_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Table_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_WashingLine_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_WashingLine_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_WashingLine_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_WashingLine_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Wire_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Wire_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Wire_04.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Props/SM_Prop_Wire_04.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_American_Truck_Destroyed_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_American_Truck_Destroyed_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_BarrageBalloon_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_BarrageBalloon_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_Car_Damaged_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_Car_Damaged_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Car_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Car_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Halftrack_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Halftrack_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_Destroyed_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_German_Tank_Destroyed_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_Russian_Tank_Destroyed_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Prefabs/Vehicles/SM_Veh_Russian_Tank_Destroyed_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures/German_Vehicle_Texture_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures/German_Vehicle_Texture_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures/German_Vehicle_Texture_01_Destroyed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures/German_Vehicle_Texture_01_Destroyed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures/PolygonWar_Texture_01_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures/PolygonWar_Texture_01_A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures/PolygonWar_Texture_03_C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures/PolygonWar_Texture_03_C.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures/Russian_Vehicle_Texture_01_Destroyed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures/Russian_Vehicle_Texture_01_Destroyed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures/Tank_Track_Texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonWar/Textures/Tank_Track_Texture.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CombatScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CombatScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Train/TrainMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Train/TrainMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tex.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tex/NewLayer.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tex/NewLayer.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tex/seamless_beach_sand_texture_by_hhh316_d4hr45u-fullview.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tex/seamless_beach_sand_texture_by_hhh316_d4hr45u-fullview.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Train.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Train/NearTrainProp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Train/NearTrainProp/Rail000.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Train/NearTrainProp/Rail000.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Train/Train.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Train/Train/Level_3_Back.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Train/Train/Level_3_Back.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Train/Train/Level_3_Front.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Train/Train/Level_3_Front.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Vladislav Tsurikov.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Vladislav Tsurikov/Mega World.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Vladislav Tsurikov/Mega World/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Vladislav Tsurikov/Mega World/Resources/Polaris Brushes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Vladislav Tsurikov/Mega World/Resources/Polaris Brushes/WhiteSquare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Vladislav Tsurikov/Mega World/Resources/Polaris Brushes/WhiteSquare.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/10 BROWN-DARK-LPUP.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/10 BROWN-DARK-LPUP.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/47 BLUE-WHITE-LPUP.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/47 BLUE-WHITE-LPUP.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/atlas-LPUP.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/atlas-LPUP.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-albedo-LPUP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-albedo-LPUP.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-emission-LPUP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-emission-LPUP.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-specular-LPUP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Textures/atlas-specular-LPUP.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Nature_M.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Nature_M/Trees_M.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Nature_M/Trees_M/stump-snow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Nature_M/Trees_M/stump-snow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Nature_M.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Nature_M/Trees_M.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Nature_M/Trees_M/stump-snow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Nature_M/Trees_M/stump-snow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/NewLayer.terrainlayer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/NewLayer.terrainlayer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/logs-snow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/logs-snow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/shrub_white.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/shrub_white.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-baobab_white.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-baobab_white.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-beech_white.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-beech_white.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-birch_white.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-birch_white.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-conifer_snow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-conifer_snow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-dead-snow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-dead-snow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-elipse_white.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-elipse_white.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-fir-snow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-fir-snow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-forest_white.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-forest_white.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-lime_white.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-lime_white.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-oak_white.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-oak_white.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-round_white.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-round_white.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-simple_white.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-simple_white.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-tall_white.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree-tall_white.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree_white.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Nature_T/tree_white.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/barricade-tank.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/barricade-tank.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/sandbag.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/sandbag.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/sandbags-straight.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/sandbags-straight.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/tent-war.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/tent-war.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/trenches-wire.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/trenches-wire.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/trenches-wood.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/WW2_T/trenches-wood.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/logs-snow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/logs-snow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/shrub_white.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/shrub_white.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-baobab_white.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-baobab_white.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-beech_white.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-beech_white.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-birch_white.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-birch_white.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-conifer-snow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-conifer-snow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-dead-snow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-dead-snow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-elipse_white.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-elipse_white.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-fir-snow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-fir-snow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-forest_white.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-forest_white.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-lime_white.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-lime_white.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-oak_white.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-oak_white.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-round_white.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-round_white.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-simple_white.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-simple_white.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-tall_white.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree-tall_white.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree_white.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Nature_T/Trees_T/tree_white.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/barricade-tank.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/barricade-tank.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/sandbag.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/sandbag.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/sandbags-straight.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/sandbags-straight.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/tent-war.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/tent-war.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/trenches-wire.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/trenches-wire.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/trenches-wood.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/WW2_T/trenches-wood.prefab.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +949,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3be1a7ff939c43f181c0a10b5a0189ac13c800/a1/4291ae0c/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3be1a7ff939c43f181c0a10b5a0189ac13c800/fa/dcb2ce37/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/edef46c9b2db4b878c98495bfdc516fa568ba8/d6/1aa365b9/Void.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enum/Rank.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Train/TrainMove.cs" root0="FORCE_HIGHLIGHTING" />
@@ -89,7 +1027,7 @@
       <workItem from="1670118706412" duration="2512000" />
       <workItem from="1670308355400" duration="925000" />
       <workItem from="1670374822806" duration="1871000" />
-      <workItem from="1670402538338" duration="7150000" />
+      <workItem from="1670402538338" duration="13391000" />
     </task>
     <servers />
   </component>

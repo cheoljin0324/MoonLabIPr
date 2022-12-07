@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class TrainMove : MonoBehaviour
@@ -14,6 +15,15 @@ public class TrainMove : MonoBehaviour
         _isMoving = false;
     }
 
+    /// <summary>
+    /// Test function to move the train
+    /// </summary>
+    [ContextMenu("Move")]
+    public void Move()
+    {
+        Move(1f);
+    }
+    
     public void Move(float speed)
     {
         if (_isMoving)
@@ -21,7 +31,7 @@ public class TrainMove : MonoBehaviour
             StopCoroutine(nameof(MoveCoroutine));    
         }
         
-        StartCoroutine(nameof(MoveCoroutine), speed);
+        StartCoroutine(nameof(MoveCoroutine), 1);
     }
 
     public void Stop()
