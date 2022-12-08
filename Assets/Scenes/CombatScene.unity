@@ -1046,11 +1046,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Train
       objectReference: {fileID: 0}
-    - target: {fileID: 6647643566601867713, guid: 7e0b44c0910490f42871c375c441ac2b,
-        type: 3}
-      propertyPath: m_TagString
-      value: Train
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0b44c0910490f42871c375c441ac2b, type: 3}
 --- !u!4 &6647643564931430700 stripped
