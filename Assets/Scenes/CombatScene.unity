@@ -266,6 +266,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -460
       objectReference: {fileID: 0}
+    - target: {fileID: 1738070899663776723, guid: 553fed6b04591134a9d55098cd93945d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -74.99997
+      objectReference: {fileID: 0}
     - target: {fileID: 1738070899744490835, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_Camera
@@ -340,6 +345,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738070899844879402, guid: 553fed6b04591134a9d55098cd93945d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -74.99997
       objectReference: {fileID: 0}
     - target: {fileID: 1738070899943850705, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
@@ -456,6 +466,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1925127913}
+    - target: {fileID: 1738070900421213908, guid: 553fed6b04591134a9d55098cd93945d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -75.00009
+      objectReference: {fileID: 0}
     - target: {fileID: 3140035854498760713, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -464,12 +479,12 @@ PrefabInstance:
     - target: {fileID: 3140035854498760713, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -18831.172
+      value: 0.00016784668
       objectReference: {fileID: 0}
     - target: {fileID: 3140035854498760713, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00045776367
+      value: 0.0004272461
       objectReference: {fileID: 0}
     - target: {fileID: 3618626315837490855, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
@@ -1029,6 +1044,11 @@ PrefabInstance:
     - target: {fileID: 6647643566601867713, guid: 7e0b44c0910490f42871c375c441ac2b,
         type: 3}
       propertyPath: m_Name
+      value: Train
+      objectReference: {fileID: 0}
+    - target: {fileID: 6647643566601867713, guid: 7e0b44c0910490f42871c375c441ac2b,
+        type: 3}
+      propertyPath: m_TagString
       value: Train
       objectReference: {fileID: 0}
     m_RemovedComponents: []
