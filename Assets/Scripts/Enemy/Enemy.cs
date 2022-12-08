@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Base : PoolableMono
+public class Enemy : PoolableMono
 {
     void Start()
     {
@@ -16,6 +16,6 @@ public class Enemy_Base : PoolableMono
 
     public override void Reset()
     {
-
+        
     }
 }
