@@ -53,6 +53,7 @@ public class CameraController : MonoBehaviour
         
         if (Input.GetMouseButtonUp(0))
         {
+            _moveVector = transform.position - _target.position;
             _clickPosition = Vector2.zero;
             _isClicking = false;
         }
