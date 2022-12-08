@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class CanvasManager : MonoSingleton<CanvasManager>
 {
+    [SerializeField]
+    private string _defaultCanvasName = null;
+
     private Dictionary<string, Canvas> _canvasDictionary = new Dictionary<string, Canvas>();
 
     protected override void Awake()
@@ -17,7 +20,7 @@ public class CanvasManager : MonoSingleton<CanvasManager>
     {
         foreach (var key in _canvasDictionary.Keys)
         {
-            _canvasDictionary[key].enabled = key == "MenuCanvas";
+            _canvasDictionary[key].enabled = key == _defaultCanvasName;
         }
     }
 
