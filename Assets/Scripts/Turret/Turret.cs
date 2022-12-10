@@ -43,9 +43,7 @@ public class Turret : MonoBehaviour
         {
             Vector2 direction = new Vector2(_target.position.x - _turret.position.x, _target.position.z - _turret.position.z);
             direction.Normalize();
-            
             _turret.rotation = Quaternion.Lerp(_turret.rotation, Quaternion.Euler(_defaultRotation.x, Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg + _defaultRotation.y, _defaultRotation.z), _rotationSpeed * Time.deltaTime);
-            
             yield return null;
         }
         

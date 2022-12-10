@@ -14,7 +14,7 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
 
                 if (instance == null)
                 {
-                    Debug.LogError(typeof(T) + "is nothing");
+                    Debug.LogError(typeof(T) + " is nothing");
                 }
             }
 

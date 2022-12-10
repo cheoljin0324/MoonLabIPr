@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class TrainMove : MonoBehaviour
+public class TrainMovement : MonoBehaviour
 {
-    [SerializeField] 
-    private float MaxSpeed = 1f;
+    [FormerlySerializedAs("MaxSpeed")] [SerializeField]
+    private float _maxSpeed = 1f;
 
     private bool _isMoving = false;
 
@@ -15,23 +16,24 @@ public class TrainMove : MonoBehaviour
         _isMoving = false;
     }
 
-    /// <summary>
-    /// Test function to move the train
-    /// </summary>
-    [ContextMenu("Move")]
-    public void Move()
-    {
-        Move(1f);
-    }
-    
     public void Move(float speed)
     {
         if (_isMoving)
         {
-            StopCoroutine(nameof(MoveCoroutine));    
+            StopCoroutine(nameof(MoveCoroutine));
         }
-        
-        StartCoroutine(nameof(MoveCoroutine), 1);
+
+        StartCoroutine(nameof(MoveCoroutine), speed);
+    }
+
+    public void Move()
+    {
+        if (_isMoving)
+        {
+            StopCoroutine(nameof(MoveCoroutine));
+        }
+
+        StartCoroutine(nameof(MoveCoroutine), _maxSpeed);
     }
 
     public void Stop()
@@ -43,7 +45,7 @@ public class TrainMove : MonoBehaviour
     {
         _isMoving = true;
 
-        float trainSpeed = Mathf.Clamp(speed, 0f, MaxSpeed);
+        float trainSpeed = Mathf.Clamp(speed, 0f, _maxSpeed);
         
         while (_isMoving)
         {

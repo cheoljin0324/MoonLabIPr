@@ -6,11 +6,15 @@ public class CombatManager : MonoSingleton<CombatManager>
 {
     [SerializeField]
     private PoolingListSO _initList = null;
+    
+    private Train _train = null;
+    public Train Train => _train;
 
     protected override void Awake()
     {
         base.Awake();
         CreatePool();
+        _train = FindObjectOfType<Train>();
     }
 
     private void CreatePool()
