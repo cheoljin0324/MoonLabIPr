@@ -18,7 +18,6 @@ public class Tank : MonoBehaviour
     
     private void Start()
     {
-        _targetDetector.DetectTargets();
-        _turret.Aim(_targetDetector.FindNearestTarget());
+        _turret.Aim(_targetDetector.NearestTarget);
     }
 }

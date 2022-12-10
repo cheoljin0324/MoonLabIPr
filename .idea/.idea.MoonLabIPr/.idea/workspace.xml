@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e5c2637b-4bcd-49f6-a330-777dfa700184" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MoonLabIPr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MoonLabIPr/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tank/Tank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tank/Tank.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TargetDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TargetDetector.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +101,7 @@
       <workItem from="1670402538338" duration="18628000" />
       <workItem from="1670502060165" duration="1754000" />
       <workItem from="1670512485410" duration="5360000" />
-      <workItem from="1670659949011" duration="9810000" />
+      <workItem from="1670659949011" duration="10917000" />
     </task>
     <servers />
   </component>

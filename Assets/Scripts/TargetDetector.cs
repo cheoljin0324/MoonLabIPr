@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class TargetDetector : MonoBehaviour
 {
@@ -10,67 +11,39 @@ public class TargetDetector : MonoBehaviour
     
     [SerializeField]
     private float _range = 10f;
-    
-    private Transform[] _targets = null;
 
-    public Transform[] Targets
+    private List<Transform> _targets = new List<Transform>();
+
+    public List<Transform> TargetsInRange
     {
         get
         {
-            return _targets;
+            Debug.Log("TargetsInRange");
+            if(_targets.Count < 1)
+            {
+                FindTargets();
+            }
+            
+            return _targets.Where(t => Vector3.Distance(transform.position, t.position) <= _range).ToList();
         }
     }
-    
-    private Transform _nearestTarget = null;
+
     public Transform NearestTarget
     {
         get
         {
-            if (_nearestTarget == null)
+            if (TargetsInRange.Count == 0)
             {
-                _nearestTarget = FindNearestTarget();
+                return null;
             }
-            return _nearestTarget;
+
+            return TargetsInRange.OrderBy(t => Vector3.Distance(transform.position, t.position)).First();
         }
-    }
-
-    private void Start()
-    {
-        DetectTargets();
-    }
-
-    public Transform[] DetectTargets()
-    {
-        return Array.Empty<Transform>();
     }
     
-    public Transform[] FindTargetsInRange()
+    private void FindTargets()
     {
-        List<Transform> targetsInRange = new List<Transform>();
-        foreach (Transform target in _targets)
-        {
-            if (Vector3.Distance(transform.position, target.position) <= _range)
-            {
-                targetsInRange.Add(target);
-            }
-        }
-        return targetsInRange.ToArray();
-    }
-    
-    public Transform FindNearestTarget()
-    {
-        Transform nearestTarget = null;
-        float nearestDistance = Mathf.Infinity;
-        foreach (Transform target in _targets)
-        {
-            float distance = Vector3.Distance(transform.position, target.position);
-            if (distance < nearestDistance)
-            {
-                nearestDistance = distance;
-                nearestTarget = target;
-            }
-        }
-        _nearestTarget = nearestTarget;
-        return _nearestTarget;
+        _targets.Clear();
+        _targets.AddRange(GameObject.FindGameObjectsWithTag(_targetTag).Select(x => x.transform));
     }
 }
