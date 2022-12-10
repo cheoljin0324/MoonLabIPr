@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,17 +6,42 @@ using UnityEngine;
 public class TargetDetector : MonoBehaviour
 {
     [SerializeField]
+    private string _targetTag = "";
+    
+    [SerializeField]
     private float _range = 10f;
     
     private Transform[] _targets = null;
-    public Transform[] Targets => _targets;
+
+    public Transform[] Targets
+    {
+        get
+        {
+            return _targets;
+        }
+    }
     
     private Transform _nearestTarget = null;
-    public Transform NearestTarget => _nearestTarget;
-
-    public void DetectTargets()
+    public Transform NearestTarget
     {
-        _targets = CombatManager.Instance.Train.GetTrainCarTransforms();
+        get
+        {
+            if (_nearestTarget == null)
+            {
+                _nearestTarget = FindNearestTarget();
+            }
+            return _nearestTarget;
+        }
+    }
+
+    private void Start()
+    {
+        DetectTargets();
+    }
+
+    public Transform[] DetectTargets()
+    {
+        return Array.Empty<Transform>();
     }
     
     public Transform[] FindTargetsInRange()
