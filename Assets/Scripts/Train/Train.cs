@@ -13,7 +13,10 @@ public class Train : MonoBehaviour
     public TrainCar[] TrainCars => _trainCars;
     
     private TrainMovement _trainMovement = null;
+    public TrainMovement TrainMovement => _trainMovement;
+    
     private TrainRailGenerator _trainRailGenerator = null;
+    public TrainRailGenerator TrainRailGenerator => _trainRailGenerator;
 
     private void Awake()
     {

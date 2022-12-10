@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Train
+  - Event
   layers:
   - Default
   - TransparentFX
