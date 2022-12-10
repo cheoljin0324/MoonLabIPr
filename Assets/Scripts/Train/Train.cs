@@ -23,7 +23,7 @@ public class Train : MonoBehaviour
     
     private void Start()
     {
-        _trainMovement.Move(150f);
+        _trainMovement.Move(10f);
     }
 
     public Transform[] GetTrainCarTransforms()

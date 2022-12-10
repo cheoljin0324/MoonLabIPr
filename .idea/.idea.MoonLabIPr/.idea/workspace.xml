@@ -2,36 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5c2637b-4bcd-49f6-a330-777dfa700184" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Tank.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Tank/Tank_G.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Tank/Tank_G.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resource/TrainCarEquip.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resource/TrainCarEquip/Default_Back_WeaponEquip.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resource/TrainCarEquip/Default_Back_WeaponEquip.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resource/TrainCarEquip/Level_1_Back_WeaponEquip.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resource/TrainCarEquip/Level_1_Back_WeaponEquip.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resource/TrainCarEquip/Level_2_Back_WeaponEquip.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resource/TrainCarEquip/Level_2_Back_WeaponEquip.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resource/TrainCarEquip/Level_3_Back_WeaponEquip.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resource/TrainCarEquip/Level_3_Back_WeaponEquip.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TargetDetector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TargetDetector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Train/TrainCar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Train/TrainCar.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Turret.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Turret/Turret.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Turret/Turret.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MapGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MapGenerator.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MoonLabIPr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MoonLabIPr/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Train.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Train.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CombatScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CombatScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/MonoSingleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/MonoSingleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CombatManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CombatManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tank/Tank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tank/Tank.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Train/Train.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Train/Train.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Train/TrainMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Train/TrainMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Train/TrainMove.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Train/TrainMovement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CombatScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CombatScene/LightingData.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +21,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enum/Rank.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Train/TrainMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Train/TrainRailGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turret/Turret.cs" root0="FORCE_HIGHLIGHTING" />
@@ -125,7 +101,7 @@
       <workItem from="1670402538338" duration="18628000" />
       <workItem from="1670502060165" duration="1754000" />
       <workItem from="1670512485410" duration="5360000" />
-      <workItem from="1670659949011" duration="4203000" />
+      <workItem from="1670659949011" duration="6330000" />
     </task>
     <servers />
   </component>
