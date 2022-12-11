@@ -10,7 +10,10 @@ public class EnemyManager : MonoSingleton<EnemyManager>
     protected override void Awake()
     {
         base.Awake();
-        Invoke("CreatePool", 0.5f);
+
+        PoolManager.Instance = new PoolManager(transform);
+
+        CreatePool();
     }
 
     private void Start()
@@ -30,7 +33,7 @@ public class EnemyManager : MonoSingleton<EnemyManager>
         yield return new WaitForSeconds(3f);
         while (true)
         {
-            enemy = PoolManager.Instance.Pop("EnemyTest") as Enemy;
+            enemy = PoolManager.Instance.Pop("Test") as Enemy;
 
             float randomPosZ = Random.Range(-20f, 0f);
             Vector3 pos = CombatManager.Instance.Train.transform.position;
@@ -38,6 +41,7 @@ public class EnemyManager : MonoSingleton<EnemyManager>
             pos.z += randomPosZ;
 
             enemy.transform.position = pos;
+            yield return new WaitForSeconds(3f);
         }
     }
 }

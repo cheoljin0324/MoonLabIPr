@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: InitPollingList
   m_EditorClassIdentifier: 
   list:
-  - prefab: {fileID: 2930932631618162630, guid: 67151a7827344784982c853dd298270b,
+  - prefab: {fileID: 3596827295585010045, guid: fe853e975757ccc4ebbd42949dac48e5,
       type: 3}
     poolCnt: 10
