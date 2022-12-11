@@ -18,7 +18,6 @@ public class TargetDetector : MonoBehaviour
     {
         get
         {
-            Debug.Log("TargetsInRange");
             if(_targets.Count < 1)
             {
                 FindTargets();
