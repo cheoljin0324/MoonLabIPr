@@ -9,8 +9,7 @@ public class PoolManager
     private Dictionary<string, Pool<PoolableMono>> _pools = new Dictionary<string, Pool<PoolableMono>>();
 
     private Transform _trmParent;
-
-
+    
     public PoolManager(Transform trmParent)
     {
         _trmParent = trmParent;

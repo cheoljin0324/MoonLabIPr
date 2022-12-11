@@ -33,7 +33,7 @@ public class EnemyManager : MonoSingleton<EnemyManager>
         yield return new WaitForSeconds(3f);
         while (true)
         {
-            enemy = PoolManager.Instance.Pop("Test") as Enemy;
+            enemy = PoolManager.Instance.Pop("Tank_G") as Enemy;
 
             float randomPosZ = Random.Range(-20f, 0f);
             Vector3 pos = CombatManager.Instance.Train.transform.position;

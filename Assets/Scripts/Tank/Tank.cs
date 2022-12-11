@@ -18,6 +18,6 @@ public class Tank : MonoBehaviour
     
     private void Start()
     {
-        _turret.Aim(_targetDetector.NearestTarget);
+        //_tankMovement.MoveTo(new Vector3(0,0,0));
     }
 }
