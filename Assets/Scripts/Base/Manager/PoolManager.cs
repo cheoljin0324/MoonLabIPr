@@ -23,6 +23,7 @@ public class PoolManager
 
     public PoolableMono Pop(string prefabName)
     {
+        // 프리팹 이름으로 찾기
         if (!_pools.ContainsKey(prefabName))
         {
             Debug.LogError("Prefab doesnt exist on pool");
