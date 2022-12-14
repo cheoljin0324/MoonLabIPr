@@ -1,10 +1,10 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ÀÌ°ÍÀ» »ó¼Ó¹ŞÀº ¿ÀºêÁ§Æ®¸¸ Ç®¸µ °¡´É
+// ì´ê²ƒì„ ìƒì†ë°›ì€ ì˜¤ë¸Œì íŠ¸ë§Œ í’€ë§ ê°€ëŠ¥
 public abstract class PoolableMono : MonoBehaviour
 {
-    // Ç®¸µ ¸®½ºÆ®¿¡¼­ ²¨³¾ ¶§ ¼öÄ¡°°Àº °Íµé ¸®¼Â
+    // í’€ë§ ë¦¬ìŠ¤íŠ¸ì—ì„œ êº¼ë‚¼ ë•Œ ìˆ˜ì¹˜ê°™ì€ ê²ƒë“¤ ë¦¬ì…‹
     public abstract void Reset();
 }
