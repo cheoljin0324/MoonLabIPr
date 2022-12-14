@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +13,7 @@ public class Pool<T> where T : PoolableMono
         _prefab = prefab;
         _parent = parent;
 
-        // Ç®¸µÇÒ ¿ÀºêÁ§Æ® »ı¼º
+        // í’€ë§í•  ì˜¤ë¸Œì íŠ¸ ìƒì„±
         for (int i = 0; i < count; i++)
         {
             T obj = GameObject.Instantiate(prefab, parent);
@@ -26,7 +26,7 @@ public class Pool<T> where T : PoolableMono
     public T Pop()
     {
         T obj = null;
-        // ¸®½ºÆ®¿¡ ³²Àº°Ô ¾øÀ¸¸é »õ·Î ¸¸µé±â
+        // ë¦¬ìŠ¤íŠ¸ì— ë‚¨ì€ê²Œ ì—†ìœ¼ë©´ ìƒˆë¡œ ë§Œë“¤ê¸°
         if (_pool.Count <= 0)
         {
             obj = GameObject.Instantiate(_prefab, _parent);
@@ -40,7 +40,7 @@ public class Pool<T> where T : PoolableMono
         return obj;
     }
 
-    // ´Ù½Ã Áı¾î³Ö±â
+    // ë‹¤ì‹œ ì§‘ì–´ë„£ê¸°
     public void Push(T obj)
     {
         obj.gameObject.SetActive(false);
