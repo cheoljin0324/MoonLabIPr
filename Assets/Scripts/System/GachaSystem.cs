@@ -18,6 +18,9 @@ public class GachaSystem : MonoBehaviour
 
         if(isTenGacha != 9)
         {
+            // 낮은 확률순으로
+            // Rank 이거 확률 값으로 바꿔야하는데
+            // 한정 픽업일때(특정 캐릭터의 확률이 올라가는거) 가챠도 만들어야함
             if (randomRarity <= (float)Rank.SuperRare)
             {
                 character = SuperRareGacha();
@@ -31,6 +34,7 @@ public class GachaSystem : MonoBehaviour
                 character = NormalGacha();
             }
         }
+        // 10번째 가챠일때
         else
         {
             if (randomRarity <= (float)Rank.SuperRare)
@@ -46,6 +50,7 @@ public class GachaSystem : MonoBehaviour
         return character;
     }
 
+    // 해당 등급 리스트에 있는 캐릭터중 하나를 랜덤으로 뽑아온다
     public CharacterSO NormalGacha()
     {
         randomRarity = Random.Range(0, characterList.normalCharacterList.Count);

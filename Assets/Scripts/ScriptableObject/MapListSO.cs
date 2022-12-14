@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+// 해당 맵에 대한 정보
 [Serializable]
 public class Map
 {
