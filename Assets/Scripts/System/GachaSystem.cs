@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,9 +18,9 @@ public class GachaSystem : MonoBehaviour
 
         if(isTenGacha != 9)
         {
-            // ³·Àº È®·ü¼øÀ¸·Î
-            // Rank ÀÌ°Å È®·ü °ªÀ¸·Î ¹Ù²ã¾ßÇÏ´Âµ¥
-            // ÇÑÁ¤ ÇÈ¾÷ÀÏ¶§(Æ¯Á¤ Ä³¸¯ÅÍÀÇ È®·üÀÌ ¿Ã¶ó°¡´Â°Å) °¡Ã­µµ ¸¸µé¾î¾ßÇÔ
+            // ë‚®ì€ í™•ë¥ ìˆœìœ¼ë¡œ
+            // Rank ì´ê±° í™•ë¥  ê°’ìœ¼ë¡œ ë°”ê¿”ì•¼í•˜ëŠ”ë°
+            // í•œì • í”½ì—…ì¼ë•Œ(íŠ¹ì • ìºë¦­í„°ì˜ í™•ë¥ ì´ ì˜¬ë¼ê°€ëŠ”ê±°) ê°€ì± ë„ ë§Œë“¤ì–´ì•¼í•¨
             if (randomRarity <= (float)Rank.SuperRare)
             {
                 character = SuperRareGacha();
@@ -34,7 +34,7 @@ public class GachaSystem : MonoBehaviour
                 character = NormalGacha();
             }
         }
-        // 10¹øÂ° °¡Ã­ÀÏ¶§
+        // 10ë²ˆì§¸ ê°€ì± ì¼ë•Œ
         else
         {
             if (randomRarity <= (float)Rank.SuperRare)
@@ -50,7 +50,7 @@ public class GachaSystem : MonoBehaviour
         return character;
     }
 
-    // ÇØ´ç µî±Ş ¸®½ºÆ®¿¡ ÀÖ´Â Ä³¸¯ÅÍÁß ÇÏ³ª¸¦ ·£´ıÀ¸·Î »Ì¾Æ¿Â´Ù
+    // í•´ë‹¹ ë“±ê¸‰ ë¦¬ìŠ¤íŠ¸ì— ìˆëŠ” ìºë¦­í„°ì¤‘ í•˜ë‚˜ë¥¼ ëœë¤ìœ¼ë¡œ ë½‘ì•„ì˜¨ë‹¤
     public CharacterSO NormalGacha()
     {
         randomRarity = Random.Range(0, characterList.normalCharacterList.Count);

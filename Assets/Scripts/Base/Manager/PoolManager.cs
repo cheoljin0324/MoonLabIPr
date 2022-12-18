@@ -1,4 +1,4 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,7 +9,7 @@ public class PoolManager
     private Dictionary<string, Pool<PoolableMono>> _pools = new Dictionary<string, Pool<PoolableMono>>();
 
     private Transform _trmParent;
-    
+
     public PoolManager(Transform trmParent)
     {
         _trmParent = trmParent;
@@ -23,7 +23,7 @@ public class PoolManager
 
     public PoolableMono Pop(string prefabName)
     {
-        // «¡∏Æ∆’ ¿Ã∏ß¿∏∑Œ √£±‚
+        // ÌîÑÎ¶¨Ìåπ Ïù¥Î¶ÑÏúºÎ°ú Ï∞æÍ∏∞
         if (!_pools.ContainsKey(prefabName))
         {
             Debug.LogError("Prefab doesnt exist on pool");

@@ -11,10 +11,10 @@ public class Train : MonoBehaviour
     [SerializeField]
     private TrainCar[] _trainCars = null;
     public TrainCar[] TrainCars => _trainCars;
-    
+
     private TrainMovement _trainMovement = null;
     public TrainMovement TrainMovement => _trainMovement;
-    
+
     private TrainRailGenerator _trainRailGenerator = null;
     public TrainRailGenerator TrainRailGenerator => _trainRailGenerator;
 
@@ -23,7 +23,7 @@ public class Train : MonoBehaviour
         _trainMovement = GetComponent<TrainMovement>();
         _trainRailGenerator = GetComponent<TrainRailGenerator>();
     }
-    
+
     private void Start()
     {
         _trainMovement.Move(10f);
