@@ -9,4 +9,6 @@ public class CombatCanvasButtonManager : ButtonManager
         // 메뉴 Canvas 나오게해야함
         // 게임 진행상황 일시중지
     }
+
+
 }
