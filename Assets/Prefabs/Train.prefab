@@ -3597,6 +3597,7 @@ GameObject:
   - component: {fileID: 3720467757006355364}
   - component: {fileID: 6647643566601867719}
   - component: {fileID: 1628237642367086789}
+  - component: {fileID: 8159901149259067492}
   - component: {fileID: 3704461571546066274}
   - component: {fileID: 1287399072}
   - component: {fileID: 8125130886784278187}
@@ -3677,6 +3678,26 @@ MonoBehaviour:
     type: 3}
   _railOffset: {x: 0, y: -0.25, z: 0}
   _railSpacing: 3.672
+--- !u!114 &8159901149259067492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6647643566601867713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03536209a3aff7845b1699e94b7dc070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _frontAnimator: {fileID: 57366486038193273}
+  _backAnimator:
+  - {fileID: 229923457160297942}
+  - {fileID: 5910485197636798858}
+  - {fileID: 6538375369895678029}
+  - {fileID: 3655262010648937066}
+  - {fileID: 1511613448209692486}
+  - {fileID: 8660118646134134779}
 --- !u!114 &3704461571546066274
 MonoBehaviour:
   m_ObjectHideFlags: 0

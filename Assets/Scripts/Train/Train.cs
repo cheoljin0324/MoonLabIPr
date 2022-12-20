@@ -24,11 +24,6 @@ public class Train : MonoBehaviour
         _trainRailGenerator = GetComponent<TrainRailGenerator>();
     }
 
-    private void Start()
-    {
-        _trainMovement.Move(10f);
-    }
-
     public Transform[] GetTrainCarTransforms()
     {
         var trainCarTransforms = new Transform[_trainCars.Length];

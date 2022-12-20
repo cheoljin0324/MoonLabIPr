@@ -10,5 +10,8 @@ public class CombatCanvasButtonManager : ButtonManager
         // 게임 진행상황 일시중지
     }
 
-
+    public void OnSkill1ButtonClicked()
+    {
+        Debug.Log("Skill1");
+    }
 }

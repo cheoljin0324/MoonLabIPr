@@ -6,7 +6,8 @@ using UnityEngine.Serialization;
 
 public class TrainMovement : MonoBehaviour
 {
-    [FormerlySerializedAs("MaxSpeed")] [SerializeField]
+    [FormerlySerializedAs("MaxSpeed")]
+    [SerializeField]
     private float _maxSpeed = 1f;
 
     private bool _isMoving = false;
@@ -39,14 +40,17 @@ public class TrainMovement : MonoBehaviour
     public void Stop()
     {
         _isMoving = false;
+        GetComponent<TrainAnimation>().PlayStopAnimation();
     }
-    
+
     private IEnumerator MoveCoroutine(float speed)
     {
         _isMoving = true;
 
         float trainSpeed = Mathf.Clamp(speed, 0f, _maxSpeed);
-        
+
+        GetComponent<TrainAnimation>().PlayMoveAnimation();
+
         while (_isMoving)
         {
             transform.Translate(Vector3.forward * trainSpeed * Time.deltaTime);
