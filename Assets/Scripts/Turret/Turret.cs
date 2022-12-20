@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -54,5 +54,12 @@ public class Turret : MonoBehaviour
         {
             _turret[i].rotation = Quaternion.Lerp(_turret[i].rotation, Quaternion.Euler(_defaultRotation), _rotationSpeed * Time.deltaTime);
         }
+    }
+
+    private void HitEffect()
+    {
+        PoolableMono effect = PoolManager.Instance.Pop("Explosion8");
+        // 피격 당한 포지션으로 수정해야함
+        //effect.transform.position = hit.position;
     }
 }
