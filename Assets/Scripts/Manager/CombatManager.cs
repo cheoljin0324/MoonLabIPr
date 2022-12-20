@@ -12,4 +12,9 @@ public class CombatManager : MonoSingleton<CombatManager>
         base.Awake();
         _train = FindObjectOfType<Train>();
     }
+
+    private void Start()
+    {
+        _train.TrainMovement.Move(10f);
+    }
 }
