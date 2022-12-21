@@ -8,6 +8,7 @@ public class TrainCarWeapon : MonoBehaviour
     private Transform _target = null;
 
     private Turret _turret = null;
+    public Turret Turret => _turret;
 
     public System.Action OnStartCombat = null;
 

@@ -10,6 +10,9 @@ public class CombatEvent : Event
     [SerializeField]
     private Transform[] _enemyMovePoints = null;
 
+    private uint _enemyCount = 3;
+    private bool _isFight = false;
+
     private IEnumerator Start()
     {
         _enemyTanks[0].TankMovement.MoveTo(_enemyMovePoints[0].position);
@@ -22,7 +25,9 @@ public class CombatEvent : Event
         _enemyTanks[1].Turret.Aim(CombatManager.Instance.Train.TrainCars[3].transform);
         _enemyTanks[2].Turret.Aim(CombatManager.Instance.Train.TrainCars[0].transform);
 
-        while (true)
+        _isFight = true;
+
+        while (_isFight)
         {
             if (_enemyTanks[0].Turret.IsAiming || _enemyTanks[1].Turret.IsAiming || _enemyTanks[2].Turret.IsAiming)
             {
@@ -30,13 +35,27 @@ public class CombatEvent : Event
                 continue;
             }
 
-            _enemyTanks[0].Turret.Fire();
-            _enemyTanks[1].Turret.Fire();
-            _enemyTanks[2].Turret.Fire();
-
-            Debug.Log("Enemy Fire");
+            _enemyTanks[0]?.Turret?.Fire();
+            _enemyTanks[1]?.Turret?.Fire();
+            _enemyTanks[2]?.Turret?.Fire();
 
             yield return new WaitForSeconds(3f);
+        }
+
+        TrainCarWeapon[] trainCarWeapon = FindObjectsOfType<TrainCarWeapon>();
+
+        foreach (var weapon in trainCarWeapon)
+            weapon.Turret.Release();
+    }
+
+    public void OnEnemyTankDestroyed()
+    {
+        _enemyCount--;
+
+        if (_enemyCount == 0)
+        {
+            _isFight = false;
+            CombatManager.Instance.Train.TrainMovement.Move(10f);
         }
     }
 

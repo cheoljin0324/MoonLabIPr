@@ -26,6 +26,7 @@ public class Tank : MonoBehaviour
     public void DestroyTank()
     {
         HitEffectManager.Instance.CreateExplosionEffect(transform.position);
+        FindObjectOfType<CombatEvent>().OnEnemyTankDestroyed();
         Destroy(gameObject);
     }
 

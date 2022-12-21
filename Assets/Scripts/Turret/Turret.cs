@@ -82,6 +82,10 @@ public class Turret : MonoBehaviour
 
     public void Fire()
     {
+        if (_target == null)
+        {
+            return;
+        }
         StartCoroutine(nameof(FireCoroutine));
     }
 
@@ -94,7 +98,7 @@ public class Turret : MonoBehaviour
             if (Physics.Raycast(_turret[i].position, direction, out hit, Mathf.Infinity, _targetLayer))
             {
                 HitEffectManager.Instance.CreateHitEffect(hit.point);
-                //hit.collider.GetComponent<Tank>()?.TakeDamage(10);
+                hit.collider.GetComponentInParent<Tank>()?.TakeDamage(10f);
             }
             yield return new WaitForSeconds(0.25f);
         }

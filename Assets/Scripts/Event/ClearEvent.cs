@@ -7,6 +7,7 @@ public class ClearEvent : Event
     protected override void EventContents()
     {
         CombatManager.Instance.Train.TrainMovement.Stop();
+        CanvasManager.Instance.ChangeCanvas("CombatCanvas", "ResultCanvas");
         Debug.Log("Clear");
     }
 }
