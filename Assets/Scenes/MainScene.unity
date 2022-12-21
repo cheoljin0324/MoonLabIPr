@@ -560,6 +560,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738070900315205306, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
+      propertyPath: doNotDestroy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738070900315205306, guid: 553fed6b04591134a9d55098cd93945d,
+        type: 3}
       propertyPath: _defaultCanvasName
       value: MenuCanvas
       objectReference: {fileID: 0}

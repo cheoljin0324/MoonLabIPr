@@ -37,9 +37,4 @@ public class Tank : MonoBehaviour
         if (_hp <= 0f)
             DestroyTank();
     }
-
-    private void Start()
-    {
-        //_tankMovement.MoveTo(new Vector3(0,0,0));
-    }
 }
