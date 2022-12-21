@@ -22,7 +22,7 @@ public class CombatEvent : Event
         _enemyTanks[1].Turret.Aim(CombatManager.Instance.Train.TrainCars[3].transform);
         _enemyTanks[2].Turret.Aim(CombatManager.Instance.Train.TrainCars[0].transform);
 
-        for (int i = 0; i < 10; ++i)
+        while (true)
         {
             if (_enemyTanks[0].Turret.IsAiming || _enemyTanks[1].Turret.IsAiming || _enemyTanks[2].Turret.IsAiming)
             {
@@ -33,6 +33,8 @@ public class CombatEvent : Event
             _enemyTanks[0].Turret.Fire();
             _enemyTanks[1].Turret.Fire();
             _enemyTanks[2].Turret.Fire();
+
+            Debug.Log("Enemy Fire");
 
             yield return new WaitForSeconds(3f);
         }

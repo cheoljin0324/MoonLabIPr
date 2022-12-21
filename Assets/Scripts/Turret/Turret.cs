@@ -94,6 +94,7 @@ public class Turret : MonoBehaviour
             if (Physics.Raycast(_turret[i].position, direction, out hit, Mathf.Infinity, _targetLayer))
             {
                 HitEffectManager.Instance.CreateHitEffect(hit.point);
+                //hit.collider.GetComponent<Tank>()?.TakeDamage(10);
             }
             yield return new WaitForSeconds(0.25f);
         }
