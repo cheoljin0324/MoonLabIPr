@@ -2,35 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PoolManager
+public class PoolManager : MonoSingleton<PoolManager>
 {
-    private static PoolManager _instance;
 
-    public static PoolManager Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = new PoolManager(new GameObject("PoolManager").transform);
-            }
-
-            return _instance;
-        }
-    }
-
+    [SerializeField]
+    private PoolingListSO _initList = null;
     private Dictionary<string, Pool<PoolableMono>> _pools = new Dictionary<string, Pool<PoolableMono>>();
 
-    private Transform _trmParent;
-
-    private PoolManager(Transform trmParent)
+    protected override void Awake()
     {
-        _trmParent = trmParent;
+        base.Awake();
+
+        foreach (PoolingPair pair in _initList.list)
+            PoolManager.Instance.CreatePool(pair.prefab, pair.poolCnt);
     }
 
     public void CreatePool(PoolableMono prefab, int count = 10)
     {
-        Pool<PoolableMono> pool = new Pool<PoolableMono>(prefab, _trmParent, count);
+        Pool<PoolableMono> pool = new Pool<PoolableMono>(prefab, transform, count);
         _pools.Add(prefab.gameObject.name, pool);
     }
 
