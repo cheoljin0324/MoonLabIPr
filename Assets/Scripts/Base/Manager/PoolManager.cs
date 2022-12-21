@@ -4,13 +4,26 @@ using UnityEngine;
 
 public class PoolManager
 {
-    public static PoolManager Instance;
+    private static PoolManager _instance;
+
+    public static PoolManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = new PoolManager(new GameObject("PoolManager").transform);
+            }
+
+            return _instance;
+        }
+    }
 
     private Dictionary<string, Pool<PoolableMono>> _pools = new Dictionary<string, Pool<PoolableMono>>();
 
     private Transform _trmParent;
 
-    public PoolManager(Transform trmParent)
+    private PoolManager(Transform trmParent)
     {
         _trmParent = trmParent;
     }

@@ -7,10 +7,29 @@ public class TrainCarWeapon : MonoBehaviour
     [SerializeField]
     private Transform _target = null;
 
+    private Turret _turret = null;
+
     public System.Action OnStartCombat = null;
 
     private void Awake()
     {
-        OnStartCombat += () => GetComponent<Turret>().Aim(_target);
+        _turret = GetComponent<Turret>();
+        OnStartCombat += () => _turret.Aim(_target);
+        OnStartCombat += () => StartCoroutine(nameof(FireStart));
+    }
+
+    private IEnumerator FireStart()
+    {
+        while (true)
+        {
+            if (_turret.IsAiming)
+            {
+                yield return null;
+                continue;
+            }
+
+            _turret.Fire();
+            yield return new WaitForSeconds(3f);
+        }
     }
 }

@@ -6,12 +6,10 @@ public class EnemyManager : MonoSingleton<EnemyManager>
 {
     [SerializeField]
     private PoolingListSO _initList = null;
-    
+
     protected override void Awake()
     {
         base.Awake();
-
-        PoolManager.Instance = new PoolManager(transform);
 
         CreatePool();
     }
