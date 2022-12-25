@@ -12,6 +12,6 @@ public class CombatCanvasButtonManager : ButtonManager
 
     public void OnSkill1ButtonClicked()
     {
-        Debug.Log("Skill1");
+        SkillManager.Instance.ThunderSkill();
     }
 }
