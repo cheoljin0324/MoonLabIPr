@@ -5,7 +5,7 @@ using UnityEngine;
 public class CombatEvent : Event
 {
     [SerializeField]
-    private Tank[] _enemyTanks = null;
+    private List<Tank> _enemyTanks = null;
 
     [SerializeField]
     private Transform[] _enemyMovePoints = null;
@@ -15,15 +15,23 @@ public class CombatEvent : Event
 
     private IEnumerator Start()
     {
-        _enemyTanks[0].TankMovement.MoveTo(_enemyMovePoints[0].position);
-        _enemyTanks[1].TankMovement.MoveTo(_enemyMovePoints[1].position);
-        _enemyTanks[2].TankMovement.MoveTo(_enemyMovePoints[2].position);
+        for (int i = 0; i < _enemyCount; ++i)
+        {
+            _enemyTanks[i].OnTankDestroyed += OnEnemyTankDestroyed;
+            _enemyTanks[i].OnTankDestroyed += () => { _enemyTanks.RemoveAt(i); };
+            _enemyTanks[i].TankMovement.MoveTo(_enemyMovePoints[i].position);
+        }
 
         yield return new WaitForSeconds(6f);
 
         _enemyTanks[0].Turret.Aim(CombatManager.Instance.Train.TrainCars[5].transform);
         _enemyTanks[1].Turret.Aim(CombatManager.Instance.Train.TrainCars[3].transform);
         _enemyTanks[2].Turret.Aim(CombatManager.Instance.Train.TrainCars[0].transform);
+
+        for (int i = 0; i < _enemyCount; ++i)
+        {
+            _enemyTanks[i].Turret.Aim(CombatManager.Instance.Train.TrainCars[(5 - (i * 2)) == 1 ? 0 : (5 - (i * 2))].transform);
+        }
 
         _isFight = true;
 

@@ -13,6 +13,8 @@ public class Tank : MonoBehaviour
     public Turret Turret => _turret;
     public TargetDetector TargetDetector => _targetDetector;
 
+    public event Action OnTankDestroyed;
+
     [SerializeField]
     private float _hp = 100f;
 
@@ -26,7 +28,7 @@ public class Tank : MonoBehaviour
     public void DestroyTank()
     {
         HitEffectManager.Instance.CreateExplosionEffect(transform.position);
-        FindObjectOfType<CombatEvent>().OnEnemyTankDestroyed();
+        OnTankDestroyed?.Invoke();
         Destroy(gameObject);
     }
 
