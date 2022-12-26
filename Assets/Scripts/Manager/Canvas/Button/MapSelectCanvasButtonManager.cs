@@ -33,10 +33,10 @@ public class MapSelectCanvasButtonManager : ButtonManager
         questDiscription.text = mapListSO.mapList[1].questDiscription;
         missionReward.text = mapListSO.mapList[1].missionReward;
     }
-    
+
     public void OnGameStartButtonClicked()
     {
-        SceneManager.LoadScene("CombatScene");
+        LoadingScene.Instance.LoadScene("CombatScene");
         CanvasManager.Instance.ChangeCanvas("MapSelectCanvas", "CombatCanvas");
     }
 }
