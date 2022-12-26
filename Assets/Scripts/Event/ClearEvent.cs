@@ -8,6 +8,5 @@ public class ClearEvent : Event
     {
         CombatManager.Instance.Train.TrainMovement.Stop();
         CanvasManager.Instance.ChangeCanvas("CombatCanvas", "ResultCanvas");
-        Debug.Log("Clear");
     }
 }

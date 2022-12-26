@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SkillManager : MonoSingleton<SkillManager>
 {
@@ -12,11 +13,23 @@ public class SkillManager : MonoSingleton<SkillManager>
     [SerializeField]
     private Transform[] _enemyBundle = null;
 
+    private Image _thunderCoolTimeImage = null;
+
+    private void Start()
+    {
+        _thunderCoolTimeImage = FindObjectOfType<CombatCanvasButtonManager>().transform.GetChild(1).GetChild(0).GetComponent<Image>();
+    }
+
     private void Update()
     {
         if (_thunderCurrentCoolTime > 0f)
         {
             _thunderCurrentCoolTime -= Time.deltaTime;
+        }
+
+        if (_thunderCoolTimeImage != null)
+        {
+            _thunderCoolTimeImage.fillAmount = 1 - (_thunderCurrentCoolTime / 10f);
         }
     }
 

@@ -7,7 +7,7 @@ public class ResultCanvasButtonManager : ButtonManager
 {
     public void OnMainMenuButtonClicked()
     {
-        SceneManager.LoadScene("MainScene");
+        LoadingScene.Instance.LoadScene("MainScene");
         CanvasManager.Instance.ChangeCanvas("ResultCanvas", "MenuCanvas");
     }
 }
