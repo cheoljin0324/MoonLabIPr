@@ -82,7 +82,7 @@ public class Turret : MonoBehaviour
 
     public void Fire()
     {
-        if (_target == null)
+        if (_target == null || _target.gameObject.activeSelf == false || gameObject.activeSelf == false)
         {
             return;
         }
