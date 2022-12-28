@@ -23,11 +23,6 @@ public class CombatManager : MonoSingleton<CombatManager>
         _startPosition = new Vector3(_train.transform.position.x, _train.transform.position.y, _train.transform.position.z);
     }
 
-    private void Start()
-    {
-        _train.TrainMovement.Move(10f);
-    }
-
     private void Update()
     {
         _distanceSlider.value = (Vector3.Distance(_train.transform.position, _goalTransform.position) / Vector3.Distance(_startPosition, _goalTransform.position) >= 0.02f) ? Vector3.Distance(_train.transform.position, _goalTransform.position) / Vector3.Distance(_startPosition, _goalTransform.position) : 0f;
