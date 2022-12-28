@@ -29,7 +29,7 @@ public class LoadingUIAnimation : MonoBehaviour
             _currentImageIndex = (_currentImageIndex + 1) % (uint)animationImage.Length;
             _image.SetNativeSize();
 
-            (transform as RectTransform).sizeDelta /= 4;
+            (transform as RectTransform).sizeDelta /= 1.2f;
 
             yield return new WaitForSeconds(animationSpeed);
         }
