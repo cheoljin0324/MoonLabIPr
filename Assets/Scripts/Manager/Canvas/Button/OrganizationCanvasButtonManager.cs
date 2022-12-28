@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OrganizationCanvasButtonManager : ButtonManager
 {
-    public void OnBackButtonClicked()
+    public void OnHomeButtonClicked()
     {
         // 사라질 수도 잇는 함수
         CanvasManager.Instance.ChangeCanvas("OrganizationCanvas", "MenuCanvas");
