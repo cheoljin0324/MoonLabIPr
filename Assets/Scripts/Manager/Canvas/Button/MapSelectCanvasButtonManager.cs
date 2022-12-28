@@ -36,7 +36,7 @@ public class MapSelectCanvasButtonManager : ButtonManager
 
     public void OnGameStartButtonClicked()
     {
-        LoadingScene.Instance.LoadScene("CombatScene");
+        LoadingScene.Instance.LoadScene("WinterCombatScene");
         CanvasManager.Instance.ChangeCanvas("MapSelectCanvas", "CombatCanvas");
     }
 }

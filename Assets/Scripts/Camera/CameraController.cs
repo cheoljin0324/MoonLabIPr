@@ -68,7 +68,7 @@ public class CameraController : MonoBehaviour
         }
         else if (!_isClicking)
         {
-            transform.position = _target.position + _moveVector;
+            transform.position = (_target.position + _moveVector);
         }
         _moveVector = transform.position - _target.position;
 

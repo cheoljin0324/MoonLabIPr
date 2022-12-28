@@ -11,10 +11,9 @@ public class TrainRailGenerator : MonoBehaviour
 
     [SerializeField]
     private Vector3 _railOffset = Vector3.zero;
-    
+
     [SerializeField]
     private float _railSpacing = 3.672f;
-    
     private Queue<GameObject> _railQueue = new Queue<GameObject>();
 
     private void Start()
@@ -33,7 +32,8 @@ public class TrainRailGenerator : MonoBehaviour
     private void PoolRail()
     {
         GameObject rail = _railQueue.Dequeue();
-        rail.transform.position = _railQueue.Last().transform.position + new Vector3(0f,0f,_railSpacing);
+        rail.transform.position = _railQueue.Last().transform.position + (new Vector3(0f, 0f, _railSpacing));
+
         _railQueue.Enqueue(rail);
     }
 
@@ -41,14 +41,14 @@ public class TrainRailGenerator : MonoBehaviour
     {
         for (int i = 0; i < count; ++i)
         {
-            GenerateRail(transform.position + _railOffset + new Vector3(0f, 0f, (_railSpacing * afterRail) - (_railSpacing * i)));
+            GenerateRail(transform.position + _railOffset + new Vector3(0f, 0f, (_railSpacing * afterRail) - (_railSpacing * i)), new Vector3(-90f, transform.rotation.y, 0f));
         }
         SortRailQueue();
     }
-    
-    private void GenerateRail(Vector3 position)
+
+    private void GenerateRail(Vector3 position, Vector3 euler)
     {
-        GameObject rail = Instantiate(_railPrefab, position, Quaternion.Euler(-90f, 0f, 0f));
+        GameObject rail = Instantiate(_railPrefab, position, Quaternion.Euler(euler));
         _railQueue.Enqueue(rail);
     }
 
