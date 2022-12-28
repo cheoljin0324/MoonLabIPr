@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Turret : MonoBehaviour
 {
@@ -97,6 +98,10 @@ public class Turret : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(_turret[i].position, direction, out hit, Mathf.Infinity, _targetLayer))
             {
+                Vector3 turretBack = (Quaternion.AngleAxis(_defaultRotation.y, _turret[i].up) * _turret[i].forward).normalized;
+
+                _turret[i].DOLocalMove(_turret[i].localPosition + turretBack * 0.05f, 0.2f).SetLoops(2, LoopType.Yoyo);
+
                 HitEffectManager.Instance.CreateHitEffect(hit.point);
                 hit.collider.GetComponentInParent<Tank>()?.TakeDamage(10f);
             }
