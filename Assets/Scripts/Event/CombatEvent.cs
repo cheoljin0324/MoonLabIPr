@@ -18,7 +18,6 @@ public class CombatEvent : Event
         for (int i = 0; i < _enemyCount; ++i)
         {
             _enemyTanks[i].OnTankDestroyed += OnEnemyTankDestroyed;
-            _enemyTanks[i].OnTankDestroyed += () => { _enemyTanks.RemoveAt(i); };
             _enemyTanks[i].TankMovement.MoveTo(_enemyMovePoints[i].position);
         }
 
@@ -37,15 +36,15 @@ public class CombatEvent : Event
 
         while (_isFight)
         {
-            if (_enemyTanks[0].Turret.IsAiming || _enemyTanks[1].Turret.IsAiming || _enemyTanks[2].Turret.IsAiming)
+            foreach (var tank in _enemyTanks)
             {
-                yield return null;
-                continue;
+                if (tank.Turret.IsAiming)
+                {
+                    yield return null;
+                    continue;
+                }
+                tank.Turret.Fire();
             }
-
-            _enemyTanks[0]?.Turret?.Fire();
-            _enemyTanks[1]?.Turret?.Fire();
-            _enemyTanks[2]?.Turret?.Fire();
 
             yield return new WaitForSeconds(3f);
         }

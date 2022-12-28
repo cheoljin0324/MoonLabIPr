@@ -27,6 +27,7 @@ public class AudioPlayer : MonoBehaviour
         _audioSource.pitch = _basePitch + randomPitch;
         PlayingClip(clip);
     }
+
     //피치 조정없이 그냥 재생하는 함수
     public void PlayingClip(AudioClip clip)
     {

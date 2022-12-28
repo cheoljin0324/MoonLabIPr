@@ -18,6 +18,7 @@ public class SkillManager : MonoSingleton<SkillManager>
     private void Start()
     {
         _thunderCoolTimeImage = FindObjectOfType<CombatCanvasButtonManager>().transform.GetChild(1).GetChild(0).GetComponent<Image>();
+        _thunderCurrentCoolTime = 10f;
     }
 
     private void Update()

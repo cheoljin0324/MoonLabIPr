@@ -27,9 +27,10 @@ public class Tank : MonoBehaviour
 
     public void DestroyTank()
     {
+        Debug.Log("Tank Destroyed");
         HitEffectManager.Instance.CreateExplosionEffect(transform.position);
         OnTankDestroyed?.Invoke();
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     public void TakeDamage(float damage)
