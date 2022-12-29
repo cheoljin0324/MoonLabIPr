@@ -39,6 +39,7 @@ public class TrainMovement : MonoBehaviour
 
     public void Stop()
     {
+        Debug.Log("Stop");
         _isMoving = false;
         GetComponent<TrainAnimation>().PlayStopAnimation();
     }
@@ -53,6 +54,7 @@ public class TrainMovement : MonoBehaviour
 
         while (_isMoving)
         {
+            Debug.Log("MoveCoroutine " + _isMoving);
             transform.Translate(Vector3.forward * trainSpeed * Time.deltaTime);
             yield return null;
         }

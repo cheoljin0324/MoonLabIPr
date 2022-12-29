@@ -54,7 +54,10 @@ public class SkillManager : MonoSingleton<SkillManager>
             {
                 if (Vector3.Distance(nearestEnemy.position, Camera.main.transform.position) > Vector3.Distance(_enemyBundle[i].position, Camera.main.transform.position))
                 {
-                    nearestEnemy = _enemyBundle[i];
+                    if (_enemyBundle[i].gameObject.activeSelf == true)
+                    {
+                        nearestEnemy = _enemyBundle[i];
+                    }
                 }
             }
         }
