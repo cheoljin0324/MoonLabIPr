@@ -2000,12 +2000,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1650455152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 787db738632c12345b9652f415941072, type: 3}
+  m_Script: {fileID: 11500000, guid: 57acc7e8b57a4c64ebfe7253494fc2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _sensitivity: 0.25
   _target: {fileID: 1745487565}
-  _offset: {x: 0, y: 8, z: 7.85}
+  _offset: {x: 0, y: 8.25, z: -7.5}
   _rotation: {x: 20, y: 0, z: 0}
 --- !u!4 &1745487565 stripped
 Transform:
@@ -2616,7 +2616,7 @@ PrefabInstance:
     - target: {fileID: 3140035854498760713, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000030517578
+      value: 0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 3618626315837490855, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
@@ -2626,6 +2626,11 @@ PrefabInstance:
     - target: {fileID: 3618626315837490855, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618626315837490855, guid: 553fed6b04591134a9d55098cd93945d,
+        type: 3}
+      propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4544905176349287624, guid: 553fed6b04591134a9d55098cd93945d,
