@@ -48,6 +48,7 @@ public class TrainRailGenerator : MonoBehaviour
 
     private void GenerateRail(Vector3 position, Vector3 euler)
     {
+        Debug.Log(euler);
         GameObject rail = Instantiate(_railPrefab, position, Quaternion.Euler(euler));
         _railQueue.Enqueue(rail);
     }
