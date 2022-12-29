@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b8e5c12fbf8da46bad3d36894972fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotDestroy: 1
+  doNotDestroy: 0
   _initList: {fileID: 11400000, guid: 72587191c66e94f489a013f6acb8137b, type: 2}
 --- !u!4 &111234531
 Transform:

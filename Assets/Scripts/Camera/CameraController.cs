@@ -64,11 +64,11 @@ public class CameraController : MonoBehaviour
     {
         if (_isMove)
         {
-            transform.position = Quaternion.AngleAxis(_target.rotation.y, Vector3.up) * Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, transform.position.z + (_clickPosition.x - Input.mousePosition.x)), _sensitivity * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, transform.position.z + (_clickPosition.x - Input.mousePosition.x)), _sensitivity * Time.deltaTime);
         }
         else if (!_isClicking)
         {
-            transform.position = (_target.position + Quaternion.AngleAxis(transform.rotation.y, Vector3.up) * _moveVector);
+            transform.position = (_target.position + _moveVector);
         }
         _moveVector = transform.position - _target.position;
 
