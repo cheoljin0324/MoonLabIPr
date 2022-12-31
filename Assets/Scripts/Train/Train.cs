@@ -5,7 +5,6 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 
 [RequireComponent(typeof(TrainMovement))]
-[RequireComponent(typeof(TrainRailGenerator))]
 public class Train : MonoBehaviour
 {
     [SerializeField]
