@@ -25,7 +25,6 @@ public class TrainRailGeneratorDesert : MonoBehaviour
     {
         if (Mathf.Abs(_railQueue.Peek().transform.position.x - transform.position.x) >= 65f)
         {
-            Debug.Log("update");
             PoolRail();
         }
     }
