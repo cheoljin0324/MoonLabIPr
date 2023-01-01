@@ -9,8 +9,9 @@ public class Map
 {
     public string countryName;
     public string cityName;
-    public string questDiscription;
-    public string missionReward;
+    public string questDescription;
+    public string coinRewardValue;
+    public string mapName;
 }
 
 [CreateAssetMenu(menuName = "SO/Data/MapList")]

@@ -6,37 +6,62 @@ using UnityEngine.UI;
 
 public class MapSelectCanvasButtonManager : ButtonManager
 {
-    public MapListSO mapListSO;
+    [SerializeField]
+    private MapListSO _mapListSO;
 
-    public Text country;
-    public Text station;
-    public Text questDiscription;
-    public Text missionReward;
+    [SerializeField]
+    private Text _countryText;
+    [SerializeField]
+    private Text _cityText;
+    [SerializeField]
+    private Text _questDescriptionText;
+    [SerializeField]
+    private Text _coinRewardValueText;
 
-    public void OnBackButtonClicked()
+    private int _index;
+
+    public void OnMainMenuButtonClicked()
     {
         CanvasManager.Instance.ChangeCanvas("MapSelectCanvas", "MenuCanvas");
     }
 
-    public void OnMap1ButtonClicked()
+    public void MapDescriptionChange()
     {
-        country.text = mapListSO.mapList[0].countryName;
-        station.text = mapListSO.mapList[0].cityName;
-        questDiscription.text = mapListSO.mapList[0].questDiscription;
-        missionReward.text = mapListSO.mapList[0].missionReward;
+        if (_mapListSO.mapList.Count - 1 < _index) return;
+
+        _countryText.text = _mapListSO.mapList[_index].countryName;
+        _cityText.text = _mapListSO.mapList[_index].cityName;
+        _questDescriptionText.text = _mapListSO.mapList[_index].questDescription;
+        _coinRewardValueText.text = _mapListSO.mapList[_index].coinRewardValue;
     }
 
-    public void OnMap2ButtonClicked()
+    public void OnFirstMapButtonClicked()
     {
-        country.text = mapListSO.mapList[1].countryName;
-        station.text = mapListSO.mapList[1].cityName;
-        questDiscription.text = mapListSO.mapList[1].questDiscription;
-        missionReward.text = mapListSO.mapList[1].missionReward;
+        _index = 0;
+        MapDescriptionChange();
     }
 
-    public void OnGameStartButtonClicked()
+    public void OnSecondMapButtonClicked()
     {
-        LoadingScene.Instance.LoadScene("WinterCombatScene");
+        _index = 1;
+        MapDescriptionChange();
+    }
+
+    public void OnThirdMapButtonClicked()
+    {
+        _index = 2;
+        MapDescriptionChange();
+    }
+
+    public void OnFourthMapButtonClicked()
+    {
+        _index = 3;
+        MapDescriptionChange();
+    }
+
+    public void OnStartButtonClicked()
+    {
+        LoadingScene.Instance.LoadScene(_mapListSO.mapList[_index].mapName);
         CanvasManager.Instance.ChangeCanvas("MapSelectCanvas", "CombatCanvas");
     }
 }
