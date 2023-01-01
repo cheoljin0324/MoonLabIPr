@@ -8,7 +8,7 @@ using System;
 public class Map
 {
     public string countryName;
-    public string stationName;
+    public string cityName;
     public string questDiscription;
     public string missionReward;
 }
