@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClearEvent : Event
+public class ClearEvent : Game.Event
 {
     protected override void EventContents()
     {

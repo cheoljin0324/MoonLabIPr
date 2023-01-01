@@ -9,7 +9,7 @@ public class TrainCollisionEventTrigger : MonoBehaviour
         switch (other.gameObject.tag)
         {
             case "Event":
-                other.GetComponent<Event>().StartEvent();
+                other.GetComponent<Game.Event>().StartEvent();
                 break;
         }
     }

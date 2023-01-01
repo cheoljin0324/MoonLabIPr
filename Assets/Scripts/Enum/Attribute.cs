@@ -1,8 +1,11 @@
 
-public enum Attribute
+namespace Game
 {
-    Normal,
-    Fire,
-    Water,
-    Thunder,
+    public enum Attribute
+    {
+        Normal,
+        Fire,
+        Water,
+        Thunder,
+    }
 }

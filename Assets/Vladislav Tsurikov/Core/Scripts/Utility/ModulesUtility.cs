@@ -104,10 +104,10 @@ namespace VladislavTsurikov
 
         public static bool DoesTypeExist(string className)
         {
-             var foundType = (from assembly in AppDomain.CurrentDomain.GetAssemblies()
-                              from type in GetTypesSafe(assembly)
-                              where type.Name == className
-                              select type).FirstOrDefault();
+            var foundType = (from assembly in AppDomain.CurrentDomain.GetAssemblies()
+                             from type in GetTypesSafe(assembly)
+                             where type.Name == className
+                             select type).FirstOrDefault();
 
             return foundType != null;
         }
@@ -118,7 +118,7 @@ namespace VladislavTsurikov
 
             try
             {
-               types = assembly.GetTypes();
+                types = assembly.GetTypes();
             }
             catch (ReflectionTypeLoadException e)
             {
@@ -134,7 +134,7 @@ namespace VladislavTsurikov
             var newAsset = ScriptableObject.CreateInstance(type);
             newAsset.name = type.Name;
 
-            AssetDatabase.AddObjectToAsset(newAsset, parentAsset);   
+            AssetDatabase.AddObjectToAsset(newAsset, parentAsset);
             AssetDatabase.SaveAssets();
 
             return newAsset;

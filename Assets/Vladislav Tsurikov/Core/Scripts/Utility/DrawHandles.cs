@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using UnityEngine.EventSystems;
 
 namespace VladislavTsurikov
 {
@@ -10,12 +11,12 @@ namespace VladislavTsurikov
         Hover
     }
 
-    public static class DrawHandles 
+    public static class DrawHandles
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
 
         private static Texture2D gizmoLineAaTexture;
-    
+
         public static Texture2D GizmoLineAaTexture
         {
             get
@@ -26,7 +27,7 @@ namespace VladislavTsurikov
                     gizmoLineAaTexture.SetPixels(new Color[] { new Color(1.0f, 1.0f, 1.0f, 0.0f), new Color(1.0f, 1.0f, 1.0f, 1.0f) });
                     gizmoLineAaTexture.Apply();
                 }
-    
+
                 return gizmoLineAaTexture;
             }
         }
@@ -61,7 +62,7 @@ namespace VladislavTsurikov
             }
         }
 
-    
+
         public static Vector3 cubeCornerA
         {
             get
@@ -176,7 +177,7 @@ namespace VladislavTsurikov
             startTangent = transform.MultiplyPoint(startTangent);
             endPosition = transform.MultiplyPoint(endPosition);
             endTangent = transform.MultiplyPoint(endTangent);
-            
+
             // Draws the gizmo only if depth > pixel's
             Handles.zTest = UnityEngine.Rendering.CompareFunction.Greater;
             Handles.DrawBezier(startPosition, endPosition, startTangent, endTangent, color * occlusionOpacityColorFactor, GizmoLineAaTexture, thickness);
@@ -195,7 +196,7 @@ namespace VladislavTsurikov
             Handles.DrawBezier(startPosition, endPosition, startTangent, endTangent, color, GizmoLineAaTexture, thickness);
         }
 
-        
+
         public static void DrawSquare(Matrix4x4 transform, Color color, float thickness, bool dotted = false)
         {
             DrawLineSegmentWithoutOpacity(squareCornerC, squareCornerD, transform, color, thickness, dotted);
@@ -215,7 +216,7 @@ namespace VladislavTsurikov
             DrawLineSegment(cubeCornerF, cubeCornerG, transform, color, thickness, dotted);
             DrawLineSegment(cubeCornerG, cubeCornerH, transform, color, thickness, dotted);
             DrawLineSegment(cubeCornerH, cubeCornerE, transform, color, thickness, dotted);
-    
+
             DrawLineSegment(cubeCornerA, cubeCornerE, transform, color, thickness, dotted);
             DrawLineSegment(cubeCornerB, cubeCornerF, transform, color, thickness, dotted);
             DrawLineSegment(cubeCornerC, cubeCornerG, transform, color, thickness, dotted);
@@ -225,11 +226,11 @@ namespace VladislavTsurikov
         public static void DrawLineSegmentWithoutOpacity(Vector3 normalizedStartPosition, Vector3 normalizedEndPosition, Matrix4x4 transform, Color color, float thickness, bool dotted = false)
         {
             Vector3[] points = new Vector3[2];
-            points[0] = transform.MultiplyPoint(normalizedStartPosition); 
+            points[0] = transform.MultiplyPoint(normalizedStartPosition);
             points[1] = transform.MultiplyPoint(normalizedEndPosition);
-    
+
             Color tmp = Handles.color;
-            
+
             Handles.color = color;
             Handles.zTest = UnityEngine.Rendering.CompareFunction.Greater;
             DrawLineSegment(points, thickness, dotted);
@@ -237,7 +238,7 @@ namespace VladislavTsurikov
             Handles.color = color;
             Handles.zTest = UnityEngine.Rendering.CompareFunction.LessEqual;
             DrawLineSegment(points, thickness, dotted);
-            
+
             Handles.color = tmp;
         }
 
@@ -246,9 +247,9 @@ namespace VladislavTsurikov
             Vector3[] points = new Vector3[2];
             points[0] = transform.MultiplyPoint(normalizedStartPosition);
             points[1] = transform.MultiplyPoint(normalizedEndPosition);
-    
+
             Color tmp = Handles.color;
-            
+
             Handles.color = color * occlusionOpacityColorFactor;
             Handles.zTest = UnityEngine.Rendering.CompareFunction.Greater;
             DrawLineSegment(points, thickness, dotted);
@@ -256,10 +257,10 @@ namespace VladislavTsurikov
             Handles.color = color;
             Handles.zTest = UnityEngine.Rendering.CompareFunction.LessEqual;
             DrawLineSegment(points, thickness, dotted);
-            
+
             Handles.color = tmp;
         }
-    
+
         private static void DrawLineSegment(Vector3[] points, float thickness, bool dotted)
         {
             if (dotted)
@@ -274,16 +275,16 @@ namespace VladislavTsurikov
 
         public static void CircleCap(int controlID, Vector3 position, Quaternion rotation, float size)
         {
-            if(Event.current != null && (Event.current.type == EventType.Layout || Event.current.type == EventType.Repaint))
+            if (Event.current != null && (Event.current.type == EventType.Layout || Event.current.type == EventType.Repaint))
                 Handles.CircleHandleCap(controlID, position, rotation, size, Event.current.type);
         }
 
         public static void DotCap(int controlID, Vector3 position, Quaternion rotation, float size)
         {
-            if(Event.current != null && (Event.current.type == EventType.Layout || Event.current.type == EventType.Repaint))
+            if (Event.current != null && (Event.current.type == EventType.Layout || Event.current.type == EventType.Repaint))
             {
                 Handles.DotHandleCap(controlID, position, rotation, size, Event.current.type);
-            } 
+            }
         }
 
         public static bool HandleButton(int hint, Vector3 position, Color normal, float offsetSize = 1)
@@ -312,11 +313,11 @@ namespace VladislavTsurikov
 
             ButtonAction buttonAction = GetActionHandleButton(controlID, position, Quaternion.LookRotation(position - sceneCameraPosition), size * 0.1f, Handles.CircleHandleCap);
 
-            if(buttonAction == ButtonAction.MouseDown)
+            if (buttonAction == ButtonAction.MouseDown)
             {
                 return true;
             }
-            else if(buttonAction == ButtonAction.Hover)
+            else if (buttonAction == ButtonAction.Hover)
             {
                 Handles.color = hover;
                 Handles.DrawSolidDisc(position, position - sceneCameraPosition, size * 0.1f);
@@ -345,7 +346,7 @@ namespace VladislavTsurikov
                     {
                         HandleUtility.Repaint();
                     }
-                        
+
                     break;
                 case EventType.MouseDown:
                     if (HandleUtility.nearestControl == id && (evt.button == 0))
@@ -372,6 +373,6 @@ namespace VladislavTsurikov
             return ButtonAction.None;
         }
 
-        #endif
+#endif
     }
 }

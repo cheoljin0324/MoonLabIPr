@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class CombatEvent : Event
+public class CombatEvent : Game.Event
 {
     [SerializeField]
     private List<Tank> _enemyTanks = null;

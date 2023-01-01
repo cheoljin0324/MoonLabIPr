@@ -3,20 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Event : MonoBehaviour
+namespace Game
 {
-    protected abstract void EventContents();
-    
-    public void StartEvent()
+    public abstract class Event : MonoBehaviour
     {
-        EventContents();
-    }
-
-    private void Awake()
-    {
-        if (!gameObject.CompareTag("Event"))
+        protected abstract void EventContents();
+        
+        public void StartEvent()
         {
-            gameObject.tag = "Event";
+            EventContents();
+        }
+
+        private void Awake()
+        {
+            if (!gameObject.CompareTag("Event"))
+            {
+                gameObject.tag = "Event";
+            }
         }
     }
 }
