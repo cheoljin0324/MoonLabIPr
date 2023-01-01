@@ -21,7 +21,7 @@ public class MapSelectCanvasButtonManager : ButtonManager
     public void OnMap1ButtonClicked()
     {
         country.text = mapListSO.mapList[0].countryName;
-        station.text = mapListSO.mapList[0].stationName;
+        station.text = mapListSO.mapList[0].cityName;
         questDiscription.text = mapListSO.mapList[0].questDiscription;
         missionReward.text = mapListSO.mapList[0].missionReward;
     }
@@ -29,7 +29,7 @@ public class MapSelectCanvasButtonManager : ButtonManager
     public void OnMap2ButtonClicked()
     {
         country.text = mapListSO.mapList[1].countryName;
-        station.text = mapListSO.mapList[1].stationName;
+        station.text = mapListSO.mapList[1].cityName;
         questDiscription.text = mapListSO.mapList[1].questDiscription;
         missionReward.text = mapListSO.mapList[1].missionReward;
     }

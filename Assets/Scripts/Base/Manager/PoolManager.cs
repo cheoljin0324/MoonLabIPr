@@ -13,6 +13,7 @@ public class PoolManager : MonoSingleton<PoolManager>
     {
         base.Awake();
 
+        _pools.Clear();
         foreach (PoolingPair pair in _initList.list)
             PoolManager.Instance.CreatePool(pair.prefab, pair.poolCnt);
     }
