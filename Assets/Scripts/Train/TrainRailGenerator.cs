@@ -18,7 +18,7 @@ public class TrainRailGenerator : MonoBehaviour
 
     private void Start()
     {
-        GenerateRails(23, 4);
+        GenerateRails(26, 4);
     }
 
     void Update()

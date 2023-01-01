@@ -6448,9 +6448,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 787db738632c12345b9652f415941072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sensitivity: 1
+  _sensitivity: 0.25
   _target: {fileID: 1027944048}
-  _offset: {x: 60, y: 17, z: 0}
+  _offset: {x: 30, y: 10, z: 0}
   _rotation: {x: 10, y: -90, z: 0}
 --- !u!1001 &973855404
 PrefabInstance:
