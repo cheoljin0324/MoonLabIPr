@@ -14,6 +14,8 @@ public class CombatEvent : Game.Event
 
     private IEnumerator Start()
     {
+        _enemyCount = (uint)_enemyTanks.Count;
+
         for (int i = 0; i < _enemyCount; ++i)
         {
             _enemyTanks[i].OnTankDestroyed += OnEnemyTankDestroyed;
@@ -21,10 +23,6 @@ public class CombatEvent : Game.Event
         }
 
         yield return new WaitForSeconds(6f);
-
-        _enemyTanks[0].Turret.Aim(CombatManager.Instance.Train.TrainCars[5].transform);
-        _enemyTanks[1].Turret.Aim(CombatManager.Instance.Train.TrainCars[3].transform);
-        _enemyTanks[2].Turret.Aim(CombatManager.Instance.Train.TrainCars[0].transform);
 
         for (int i = 0; i < _enemyCount; ++i)
         {

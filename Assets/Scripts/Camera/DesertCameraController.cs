@@ -67,7 +67,7 @@ public class DesertCameraController : MonoBehaviour
         }
         else if (!_isClicking)
         {
-            transform.position = (_target.position + Quaternion.AngleAxis(transform.rotation.y, Vector3.up) * _moveVector);
+            transform.position = (_target.position + _moveVector);
         }
         _moveVector = transform.position - _target.position;
 
