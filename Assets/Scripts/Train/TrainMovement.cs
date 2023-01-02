@@ -19,7 +19,6 @@ public class TrainMovement : MonoBehaviour
 
     public void Move(float speed)
     {
-        Debug.Log("Move");
         if (_isMoving)
         {
             StopCoroutine(nameof(MoveCoroutine));
@@ -55,7 +54,6 @@ public class TrainMovement : MonoBehaviour
         while (_isMoving)
         {
             transform.Translate(Vector3.forward * trainSpeed * Time.deltaTime);
-            Debug.Log("Moving");
             yield return null;
         }
 
