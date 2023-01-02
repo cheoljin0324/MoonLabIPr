@@ -22,10 +22,12 @@ public class ResultCanvasButtonManager : ButtonManager
         _stageUIOriginPos = _stageUIObject.transform.position;
         _killUIOriginPos = _killUIObject.transform.position;
         _moneyUIOriginPos = _moneyUIObject.transform.position;
+
     }
 
     public void OnMainMenuButtonClicked()
     {
+        GetComponent<RewardBase>().GivingReward();
         LoadingScene.Instance.LoadScene("MainScene");
         CanvasManager.Instance.ChangeCanvas("ResultCanvas", "MenuCanvas");
     }
