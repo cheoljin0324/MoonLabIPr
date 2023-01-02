@@ -17,6 +17,8 @@ public class MapSelectCanvasButtonManager : ButtonManager
     private Text _questDescriptionText;
     [SerializeField]
     private Text _coinRewardValueText;
+    [SerializeField]
+    private GameObject _coinObject;
 
     [SerializeField]
     private List<GameObject> _checkMakers = new List<GameObject>();
@@ -32,6 +34,7 @@ public class MapSelectCanvasButtonManager : ButtonManager
     {
         if (_mapListSO.mapList.Count - 1 < _index) return;
 
+        _coinObject.SetActive(true);
         _countryText.text = _mapListSO.mapList[_index].countryName;
         _cityText.text = _mapListSO.mapList[_index].cityName;
         _questDescriptionText.text = _mapListSO.mapList[_index].questDescription;
