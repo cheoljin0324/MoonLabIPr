@@ -70,6 +70,8 @@ public class CombatEvent : Game.Event
         var trainCarWeapon = FindObjectsOfType<TrainCarWeapon>();
 
         foreach (var weapon in trainCarWeapon)
+        {
             weapon.OnStartCombat?.Invoke();
+        }
     }
 }
