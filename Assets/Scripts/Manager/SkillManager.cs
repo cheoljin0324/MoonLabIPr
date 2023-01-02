@@ -68,5 +68,9 @@ public class SkillManager : MonoSingleton<SkillManager>
             nearestEnemy.gameObject.GetComponent<Tank>().TakeDamage(10f);
             Destroy(thunder, 0.5f);
         }
+        else
+        {
+            _thunderCurrentCoolTime = 0f;
+        }
     }
 }
