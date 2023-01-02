@@ -18,8 +18,8 @@ public class MapSelectCanvasButtonManager : ButtonManager
     [SerializeField]
     private Text _coinRewardValueText;
 
-    private int _index;
-
+    private int _index = -1;
+    
     public void OnMainMenuButtonClicked()
     {
         CanvasManager.Instance.ChangeCanvas("MapSelectCanvas", "MenuCanvas");
@@ -61,6 +61,8 @@ public class MapSelectCanvasButtonManager : ButtonManager
 
     public void OnStartButtonClicked()
     {
+        if (_index == -1) return;
+
         LoadingScene.Instance.LoadScene(_mapListSO.mapList[_index].mapName);
         CanvasManager.Instance.ChangeCanvas("MapSelectCanvas", "CombatCanvas");
     }

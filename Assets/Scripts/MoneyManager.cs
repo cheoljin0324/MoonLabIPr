@@ -6,7 +6,7 @@ using UnityEngine;
 public class MoneyManager : MonoSingleton<MoneyManager>
 {
     private int _money = 0;
-    private int _jewels = 0;
+    private int _mathias = 0;
 
     public int Money
     {
@@ -16,18 +16,18 @@ public class MoneyManager : MonoSingleton<MoneyManager>
         }
     }
     
-    public int Jewels
+    public int Mathias
     {
         get
         {
-            return _jewels;
+            return _mathias;
         }
     }
 
     private void Start()
     {
         _money = PlayerPrefs.GetInt("Money");
-        _jewels = PlayerPrefs.GetInt("Jewels");
+        _mathias = PlayerPrefs.GetInt("Mathias");
     }
     
     public void AddMoney(int amount)
@@ -36,9 +36,9 @@ public class MoneyManager : MonoSingleton<MoneyManager>
         PlayerPrefs.SetInt("Money", _money);
     }
     
-    public void AddJewels(int amount)
+    public void AddMathias(int amount)
     {
-        _jewels += amount;
-        PlayerPrefs.SetInt("Jewels", _jewels);
+        _mathias += amount;
+        PlayerPrefs.SetInt("Mathias", _mathias);
     }
 }
