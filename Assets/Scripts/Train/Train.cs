@@ -22,7 +22,10 @@ public class Train : MonoBehaviour
         _trainMovement = GetComponent<TrainMovement>();
         _trainRailGenerator = GetComponent<TrainRailGenerator>();
 
-        TrainMovement.Move(10f);
+    }
+
+    private void Start()
+    {
         TrainMovement.Move(10f);
     }
 
