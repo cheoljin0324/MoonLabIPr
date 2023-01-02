@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class TrainCarUpgradeCanvasButtonManager : ButtonManager
 {
-    public void OnBackButtonClicked()
+    public void OnHomeButtonClicked()
     {
         CanvasManager.Instance.ChangeCanvas("TrainCarUpgradeCanvas", "MenuCanvas");
     }
     
-    public void OnTrainCarUpgradeButtonClicked()
-    {
-        Debug.Log("OnTrainCarUpgradeButtonClick");
-    }
+    //public void OnTrainCarUpgradeButtonClicked()
+    //{
+    //    Debug.Log("OnTrainCarUpgradeButtonClick");
+    //}
 }
