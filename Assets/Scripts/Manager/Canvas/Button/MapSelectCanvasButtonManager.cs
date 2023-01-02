@@ -18,6 +18,9 @@ public class MapSelectCanvasButtonManager : ButtonManager
     [SerializeField]
     private Text _coinRewardValueText;
 
+    [SerializeField]
+    private List<GameObject> _checkMakers = new List<GameObject>();
+
     private int _index = -1;
     
     public void OnMainMenuButtonClicked()
@@ -33,6 +36,12 @@ public class MapSelectCanvasButtonManager : ButtonManager
         _cityText.text = _mapListSO.mapList[_index].cityName;
         _questDescriptionText.text = _mapListSO.mapList[_index].questDescription;
         _coinRewardValueText.text = _mapListSO.mapList[_index].coinRewardValue;
+
+        foreach(GameObject obj in _checkMakers)
+        {
+            obj.SetActive(false);
+        }
+        _checkMakers[_index].SetActive(true);
     }
 
     public void OnFirstMapButtonClicked()
