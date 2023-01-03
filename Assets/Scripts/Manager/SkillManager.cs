@@ -18,7 +18,7 @@ public class SkillManager : MonoSingleton<SkillManager>
 
     private void Start()
     {
-        _thunderCurrentCoolTime = 10f;
+        _thunderCurrentCoolTime = 35f;
     }
 
     private void Update()
@@ -42,7 +42,7 @@ public class SkillManager : MonoSingleton<SkillManager>
         Debug.Log("ThunderSkill");
         Transform nearestEnemy = null;
 
-        _thunderCurrentCoolTime = 10f;
+        _thunderCurrentCoolTime = 35f;
 
         for (int i = 0; i < _enemyBundle.Length; i++)
         {
@@ -65,7 +65,7 @@ public class SkillManager : MonoSingleton<SkillManager>
         if (nearestEnemy != null)
         {
             GameObject thunder = Instantiate(_thunderSkill, nearestEnemy.position, Quaternion.identity);
-            nearestEnemy.gameObject.GetComponent<Tank>().TakeDamage(10f);
+            nearestEnemy.gameObject.GetComponent<Tank>().TakeDamage(80f);
             Destroy(thunder, 0.5f);
         }
         else
