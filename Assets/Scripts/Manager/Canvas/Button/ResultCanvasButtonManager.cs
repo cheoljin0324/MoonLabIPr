@@ -11,11 +11,11 @@ public class ResultCanvasButtonManager : ButtonManager
     [SerializeField]
     private Text _mathiasText;
 
-    private RewardBase _reward;
+    private Reward _reward;
 
     private void Start()
     {
-        _reward = GetComponent<RewardBase>();
+        _reward = GetComponent<Reward>();
 
         _moneyText.text = _moneyText.text + _reward.moneyReward.ToString();
         _mathiasText.text = _mathiasText.text + _reward.mathiasReward.ToString();

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RewardBase : MonoBehaviour
+public class Reward : MonoBehaviour
 {
     [SerializeField]
     public int moneyReward;
