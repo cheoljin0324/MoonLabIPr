@@ -30,7 +30,7 @@ public class SkillManager : MonoSingleton<SkillManager>
 
         if (_thunderCoolTimeImage != null)
         {
-            _thunderCoolTimeImage.fillAmount = 1 - (_thunderCurrentCoolTime / 10f);
+            _thunderCoolTimeImage.fillAmount = 1 - (_thunderCurrentCoolTime / 35f);
         }
     }
 
