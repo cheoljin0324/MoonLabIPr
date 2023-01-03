@@ -19,7 +19,7 @@ MonoBehaviour:
       \uC5D0\uC11C \uC804\uC7C1\uC5D0 \uD718\uB9D0\uB9B0 \uC2DC\uBBFC\uB4E4\uC744
       \uAD6C\uD574\uC624\uC138\uC694"
     coinRewardValue: 1231
-    mapName: WinterCombatScene
+    mapName: country
   - countryName: "\uD3F4\uB780\uB4DC"
     cityName: "\uC624\uC18C\uBE44\uC5D0\uCE20"
     questDescription: "\uC624\uB79C \uC804\uC7C1\uC73C\uB85C \uC2DD\uB8CC\uD488 \uBCF4\uAE09\uC774
@@ -49,3 +49,11 @@ MonoBehaviour:
       \uBB3C\uC790\uB97C \uBCA0\uB97C\uB9B0\uAE4C\uC9C0 \uC798 \uC804\uB2EC\uD558\uC138\uC694"
     coinRewardValue: 1857
     mapName: WinterCombatScene
+  - countryName: "\uC18C\uB828"
+    cityName: "\uBCA0\uB97C\uB9B0"
+    questDescription: "\uB9CE\uC740 \uB208 \uB54C\uBB38\uC5D0 \uBCA0\uB97C\uB9B0\uAE4C\uC9C0
+      \uB3C4\uB2EC\uC774 \uD798\uB4E4\uC5B4 \uC5EC\uB7EC \uBB3C\uC790\uB97C \uC870\uB2EC\uD558\uAE30
+      \uC5B4\uB824\uC6B4 \uC0C1\uD669\uC785\uB2C8\uB2E4. \uBD80\uD0C1\uBC1B\uC740
+      \uBB3C\uC790\uB97C \uBCA0\uB97C\uB9B0\uAE4C\uC9C0 \uC798 \uC804\uB2EC\uD558\uC138\uC694"
+    coinRewardValue: 1857
+    mapName: city
