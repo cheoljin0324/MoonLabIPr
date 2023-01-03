@@ -1636,8 +1636,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8eacde817ce2b489b68b48b6e2343e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moneyReward: 1857
-  _mathiasReward: 0
+  moneyReward: 1857
+  mathiasReward: 5
 --- !u!114 &1573694000 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 690453033, guid: 553fed6b04591134a9d55098cd93945d,

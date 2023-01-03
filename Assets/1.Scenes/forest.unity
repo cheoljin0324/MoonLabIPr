@@ -1995,8 +1995,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ec51e479a9ad547bd2a11ef5f4cd11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moneyReward: 2199
-  _mathiasReward: 5
+  moneyReward: 2199
+  mathiasReward: 5
 --- !u!114 &442693888 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 690453033, guid: 553fed6b04591134a9d55098cd93945d,
