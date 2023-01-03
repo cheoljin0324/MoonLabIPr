@@ -17,7 +17,7 @@ public class CombatCanvasButtonManager : ButtonManager
 
     public void OnFirstCameraButtonClicked()
     {
-
+        Camera.main.GetComponent<CameraController>().MoveTrainCar(0);
     }
 
     public void OnSecondCameraButtonClicked()
@@ -27,25 +27,21 @@ public class CombatCanvasButtonManager : ButtonManager
 
     public void OnThirdCameraButtonClicked()
     {
-        _xPos = CombatManager.Instance.Train.TrainCars[2].gameObject.transform.position.x;
-        Camera.main.transform.position = new Vector3(_xPos, Camera.main.transform.position.y, Camera.main.transform.position.z);
+        Camera.main.GetComponent<CameraController>().MoveTrainCar(2);
     }
 
     public void OnFourthCameraButtonClicked()
     {
-        _xPos = CombatManager.Instance.Train.TrainCars[3].gameObject.transform.position.x;
-        Camera.main.transform.position = new Vector3(_xPos, Camera.main.transform.position.y, Camera.main.transform.position.z);
+        Camera.main.GetComponent<CameraController>().MoveTrainCar(3);
     }
 
     public void OnFifthCameraButtonClicked()
     {
-        _xPos = CombatManager.Instance.Train.TrainCars[4].gameObject.transform.position.x;
-        Camera.main.transform.position = new Vector3(_xPos, Camera.main.transform.position.y, Camera.main.transform.position.z);
+        Camera.main.GetComponent<CameraController>().MoveTrainCar(4);
     }
 
     public void OnSixthCameraButtonClicked()
     {
-        _xPos = CombatManager.Instance.Train.TrainCars[5].gameObject.transform.position.x;
-        Camera.main.transform.position = new Vector3(_xPos, Camera.main.transform.position.y, Camera.main.transform.position.z);
+        Camera.main.GetComponent<CameraController>().MoveTrainCar(5);
     }
 }
