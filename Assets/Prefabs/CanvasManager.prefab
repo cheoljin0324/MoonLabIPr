@@ -20029,7 +20029,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Stage :'
+  m_Text: 'Stage : '
 --- !u!1 &6066973416852898694
 GameObject:
   m_ObjectHideFlags: 0
@@ -22063,7 +22063,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_AnchoredPosition: {x: 17975.006, y: 0.000030517578}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2562549825647517855
@@ -23610,7 +23610,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Money :'
+  m_Text: 'Money : '
 --- !u!1 &8464852077911126628
 GameObject:
   m_ObjectHideFlags: 0
@@ -24228,7 +24228,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Stage :'
+  m_Text: 'Mathias : '
 --- !u!1 &8863710579141196955
 GameObject:
   m_ObjectHideFlags: 0
