@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CombatCanvasButtonManager : ButtonManager
 {
-    private float _xPos;
-
     public void OnMenuButtonClicked()
     {
         // 메뉴 Canvas 나오게해야함
@@ -19,37 +17,35 @@ public class CombatCanvasButtonManager : ButtonManager
 
     public void OnFirstCameraButtonClicked()
     {
-        _xPos = CombatManager.Instance.Train.TrainCars[0].gameObject.transform.position.x;
-        Camera.main.GetComponent<CameraController>();
+
     }
 
     public void OnSecondCameraButtonClicked()
     {
-        _xPos = CombatManager.Instance.Train.TrainCars[1].gameObject.transform.position.x;
-        Camera.main.transform.Translate(new Vector3(_xPos, 0f));
+        Camera.main.GetComponent<CameraController>().MoveTrainCar(1);
     }
 
     public void OnThirdCameraButtonClicked()
     {
         _xPos = CombatManager.Instance.Train.TrainCars[2].gameObject.transform.position.x;
-        Camera.main.transform.Translate(new Vector3(_xPos, 0f));
+        Camera.main.transform.position = new Vector3(_xPos, Camera.main.transform.position.y, Camera.main.transform.position.z);
     }
 
     public void OnFourthCameraButtonClicked()
     {
         _xPos = CombatManager.Instance.Train.TrainCars[3].gameObject.transform.position.x;
-        Camera.main.transform.Translate(new Vector3(_xPos, 0f));
+        Camera.main.transform.position = new Vector3(_xPos, Camera.main.transform.position.y, Camera.main.transform.position.z);
     }
 
     public void OnFifthCameraButtonClicked()
     {
         _xPos = CombatManager.Instance.Train.TrainCars[4].gameObject.transform.position.x;
-        Camera.main.transform.Translate(new Vector3(_xPos, 0f));
+        Camera.main.transform.position = new Vector3(_xPos, Camera.main.transform.position.y, Camera.main.transform.position.z);
     }
 
     public void OnSixthCameraButtonClicked()
     {
         _xPos = CombatManager.Instance.Train.TrainCars[5].gameObject.transform.position.x;
-        Camera.main.transform.Translate(new Vector3(_xPos, 0f));
+        Camera.main.transform.position = new Vector3(_xPos, Camera.main.transform.position.y, Camera.main.transform.position.z);
     }
 }

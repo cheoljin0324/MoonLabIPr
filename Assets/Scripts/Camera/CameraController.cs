@@ -1,3 +1,4 @@
+using System.Drawing;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -73,5 +74,10 @@ public class CameraController : MonoBehaviour
         _moveVector = transform.position - _target.position;
 
         transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Clamp(transform.position.z, _target.transform.position.z - 50f, _target.transform.position.z));
+    }
+
+    public void MoveTrainCar(int index)
+    {
+        transform.position = new Vector3(transform.position.x, transform.position.y, CombatManager.Instance.Train.TrainCars[index].gameObject.transform.position.z);
     }
 }
