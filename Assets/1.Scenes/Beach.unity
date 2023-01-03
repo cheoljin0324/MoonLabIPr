@@ -7379,6 +7379,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  _thunderCoolTimeImage: {fileID: 2063325550}
 --- !u!4 &1041839092
 Transform:
   m_ObjectHideFlags: 0
@@ -15062,6 +15063,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2446700781594498867, guid: 553fed6b04591134a9d55098cd93945d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3140035854498760713, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -15085,6 +15091,11 @@ PrefabInstance:
     - target: {fileID: 3618626315837490855, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506909864202747785, guid: 553fed6b04591134a9d55098cd93945d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4544905176349287624, guid: 553fed6b04591134a9d55098cd93945d,
@@ -15271,6 +15282,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moneyReward: 3928
   _mathiasReward: 5
+--- !u!114 &2063325550 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 690453033, guid: 553fed6b04591134a9d55098cd93945d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2063325544}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063325546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2063624429
 PrefabInstance:
   m_ObjectHideFlags: 0
