@@ -16,7 +16,7 @@ public class AchievementCanvasButtonManager : ButtonManager
         _mathiasText.text = PlayerPrefs.GetInt("Mathias").ToString();
     }
 
-    public void OnExitButtonClicked()
+    public void OnMainMenuButtonClicked()
     {
         // 사라질 수도 있는 캔버스
         CanvasManager.Instance.ChangeCanvas("AchievementCanvas", "MenuCanvas");
