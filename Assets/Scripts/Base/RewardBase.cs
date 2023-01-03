@@ -5,13 +5,13 @@ using UnityEngine;
 public class RewardBase : MonoBehaviour
 {
     [SerializeField]
-    protected int _moneyReward;
+    public int moneyReward;
     [SerializeField]
-    protected int _mathiasReward;
+    public int mathiasReward;
 
     public void GivingReward()
     {
-        MoneyManager.Instance.AddMoney(_moneyReward);
-        MoneyManager.Instance.AddMathias(_mathiasReward);
+        MoneyManager.Instance.AddMoney(moneyReward);
+        MoneyManager.Instance.AddMathias(mathiasReward);
     }
 }
