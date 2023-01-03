@@ -1532,6 +1532,16 @@ PrefabInstance:
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6656362781754824276, guid: 553fed6b04591134a9d55098cd93945d,
+        type: 3}
+      propertyPath: moneyReward
+      value: 1857
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656362781754824276, guid: 553fed6b04591134a9d55098cd93945d,
+        type: 3}
+      propertyPath: mathiasReward
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7382873526957216165, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1618,26 +1628,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 1
---- !u!1 &1573693998 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5403121115767302209, guid: 553fed6b04591134a9d55098cd93945d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1573693995}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1573693999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573693998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d8eacde817ce2b489b68b48b6e2343e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moneyReward: 1857
-  mathiasReward: 5
 --- !u!114 &1573694000 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 690453033, guid: 553fed6b04591134a9d55098cd93945d,

@@ -2056,12 +2056,12 @@ PrefabInstance:
     - target: {fileID: 3140035854498760713, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000061035156
+      value: -10472.94
       objectReference: {fileID: 0}
     - target: {fileID: 3140035854498760713, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0007324219
+      value: -479.9992
       objectReference: {fileID: 0}
     - target: {fileID: 3618626315837490855, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
@@ -2159,6 +2159,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6656362781754824276, guid: 553fed6b04591134a9d55098cd93945d,
+        type: 3}
+      propertyPath: moneyReward
+      value: 2199
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656362781754824276, guid: 553fed6b04591134a9d55098cd93945d,
+        type: 3}
+      propertyPath: mathiasReward
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7382873526957216165, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -2242,26 +2252,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 1
---- !u!1 &442693886 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5403121115767302209, guid: 553fed6b04591134a9d55098cd93945d,
-    type: 3}
-  m_PrefabInstance: {fileID: 442693882}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &442693887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442693886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43ec51e479a9ad547bd2a11ef5f4cd11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moneyReward: 2199
-  mathiasReward: 5
 --- !u!114 &442693888 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 690453033, guid: 553fed6b04591134a9d55098cd93945d,
