@@ -1680,6 +1680,7 @@ MonoBehaviour:
   - {fileID: 765651850}
   - {fileID: 1558344863}
   - {fileID: 753787980}
+  _thunderCoolTimeImage: {fileID: 1965011116}
 --- !u!4 &1007079787
 Transform:
   m_ObjectHideFlags: 0
@@ -3066,7 +3067,7 @@ PrefabInstance:
     - target: {fileID: 299525572529279580, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 550954873378121087, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
@@ -3620,6 +3621,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1965011116 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 690453033, guid: 553fed6b04591134a9d55098cd93945d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1965011112}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965011113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1976945564

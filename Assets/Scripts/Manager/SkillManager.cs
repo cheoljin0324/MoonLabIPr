@@ -13,11 +13,11 @@ public class SkillManager : MonoSingleton<SkillManager>
     [SerializeField]
     private Transform[] _enemyBundle = null;
 
+    [SerializeField]
     private Image _thunderCoolTimeImage = null;
 
     private void Start()
     {
-        _thunderCoolTimeImage = FindObjectOfType<CombatCanvasButtonManager>().transform.GetChild(1).GetChild(0).GetComponent<Image>();
         _thunderCurrentCoolTime = 10f;
     }
 

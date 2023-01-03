@@ -972,6 +972,7 @@ MonoBehaviour:
   - {fileID: 281660991}
   - {fileID: 554412540}
   - {fileID: 2005394045}
+  _thunderCoolTimeImage: {fileID: 1573694000}
 --- !u!1 &1341985330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,12 +1409,12 @@ PrefabInstance:
     - target: {fileID: 3140035854498760713, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -38233.797
+      value: 0.00019836426
       objectReference: {fileID: 0}
     - target: {fileID: 3140035854498760713, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6479.9995
+      value: 0.00024414062
       objectReference: {fileID: 0}
     - target: {fileID: 3449823121862481517, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
@@ -1449,6 +1450,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -49.999786
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610660001417481696, guid: 553fed6b04591134a9d55098cd93945d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00012207031
       objectReference: {fileID: 0}
     - target: {fileID: 5690813339688451887, guid: 553fed6b04591134a9d55098cd93945d,
         type: 3}
@@ -1632,6 +1638,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moneyReward: 1857
   _mathiasReward: 0
+--- !u!114 &1573694000 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 690453033, guid: 553fed6b04591134a9d55098cd93945d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1573693995}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573693996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1585503361
 GameObject:
   m_ObjectHideFlags: 0
