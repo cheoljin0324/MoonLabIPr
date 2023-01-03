@@ -40,9 +40,9 @@ public class MapSelectCanvasButtonManager : ButtonManager
         _questDescriptionText.text = _mapListSO.mapList[_index].questDescription;
         _coinRewardValueText.text = _mapListSO.mapList[_index].coinRewardValue;
 
-        foreach(GameObject obj in _checkMakers)
+        for(int i = 0; i < _checkMakers.Count; i++)
         {
-            obj.SetActive(false);
+            _checkMakers[i].SetActive(false);
         }
         _checkMakers[_index].SetActive(true);
     }
@@ -68,6 +68,18 @@ public class MapSelectCanvasButtonManager : ButtonManager
     public void OnFourthMapButtonClicked()
     {
         _index = 3;
+        MapDescriptionChange();
+    }
+
+    public void OnFifthMapButtonClicked()
+    {
+        _index = 4;
+        MapDescriptionChange();
+    }
+
+    public void OnSixthMapButtonClicked()
+    {
+        _index = 5;
         MapDescriptionChange();
     }
 
