@@ -18,7 +18,7 @@ public class SkillManager : MonoSingleton<SkillManager>
 
     private void Start()
     {
-        _thunderCurrentCoolTime = 35f;
+        _thunderCurrentCoolTime = 12f;
     }
 
     private void Update()
@@ -42,7 +42,7 @@ public class SkillManager : MonoSingleton<SkillManager>
         Debug.Log("ThunderSkill");
         Transform nearestEnemy = null;
 
-        _thunderCurrentCoolTime = 35f;
+        _thunderCurrentCoolTime = 30f;
 
         for (int i = 0; i < _enemyBundle.Length; i++)
         {
