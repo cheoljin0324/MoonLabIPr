@@ -27,24 +27,43 @@ public class MapSelectCanvasButtonManager : ButtonManager
     
     public void OnMainMenuButtonClicked()
     {
+        _index = -1;
+        MapDescriptionNull();
         CanvasManager.Instance.ChangeCanvas("MapSelectCanvas", "MenuCanvas");
     }
 
-    public void MapDescriptionChange()
+    private void MapDescriptionChange()
     {
         if (_mapListSO.mapList.Count - 1 < _index) return;
 
-        _coinObject.SetActive(true);
         _countryText.text = _mapListSO.mapList[_index].countryName;
         _cityText.text = _mapListSO.mapList[_index].cityName;
         _questDescriptionText.text = _mapListSO.mapList[_index].questDescription;
-        _coinRewardValueText.text = _mapListSO.mapList[_index].coinRewardValue;
+        if(_mapListSO.mapList[_index].coinRewardValue != "")
+        {
+            _coinObject.SetActive(true);
+            _coinRewardValueText.text = _mapListSO.mapList[_index].coinRewardValue;
+        }
 
-        for(int i = 0; i < _checkMakers.Count; i++)
+        for (int i = 0; i < _checkMakers.Count; i++)
         {
             _checkMakers[i].SetActive(false);
         }
         _checkMakers[_index].SetActive(true);
+    }
+
+    private void MapDescriptionNull()
+    {
+        _coinObject.SetActive(false);
+        _coinRewardValueText.text = "";
+        _countryText.text = "";
+        _cityText.text = "";
+        _questDescriptionText.text = "";
+
+        for (int i = 0; i < _checkMakers.Count; i++)
+        {
+            _checkMakers[i].SetActive(false);
+        }
     }
 
     public void OnFirstMapButtonClicked()

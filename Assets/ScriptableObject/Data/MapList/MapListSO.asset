@@ -52,5 +52,5 @@ MonoBehaviour:
   - countryName: 
     cityName: 
     questDescription: 
-    coinRewardValue: 1000
+    coinRewardValue: 
     mapName: city
